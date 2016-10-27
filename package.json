@@ -1,0 +1,19 @@
+{
+  "name": "gen-better-polls",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "Rscript main.R; npm run article",
+    "fetch": "Rscript tasks/scrape-wahlrechtde-umfragen.R",
+    "transform": "Rscript tasks/calculations",
+    "graphs": "Rscript tasks/calculations",
+    "article": "node tasks/buildReadme",
+    "install-packages": "Rscript install.R"
+  },
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "eslint": "^2.7.0"
+  }
+}
