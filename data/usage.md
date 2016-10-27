@@ -1,8 +1,8 @@
 
 ### Usage
 
-*Requirements* NodeJS 4+, R 3.3+
-*Installation* Ensure you have nodeJs and R installed. Then run `Rscript install.R` in the project folder to install 
+**Requirements** NodeJS 4+, R 3.3+
+**Installation** Ensure you have nodeJs and R installed. Then run `Rscript install.R` in the project folder to install 
 the requried packages.
 
 > This project consists of a set of small scripts that may be used independently of each other. @see [tasks directory](./tasks)
@@ -13,6 +13,8 @@ To completely build the project run either `Rscript main.R` or `npm start`. This
 - perform the statistical transformation and save the result in `data/data-latest-average.csv`
 - create a visualization of the transformed data in `data/assets/plot.svg` and
 - updates the `README.md` with the latest scraped images and markdown snippets from `data/*.md`
+
+These tasks are also mapped in the `package.json` and may be started using `npm run <task>`
 
  
 #### Task: scraper

@@ -2,7 +2,7 @@
 
 At the Süddeutsche Zeitung Editor's Lab we were working on a better way to deal with opinion polls. 
 
-In autumn 2017 the next general election will be held. In the months to come opinion polls an even more important component of reporting about German politics. 
+In autumn 2017 the next general election will be held. In the months to come, opinion polls play an even more important component of reporting about German politics. 
 
 Traditionally, media outlets are reporting about in a new poll in the following style: `If election would be held today, party x would get y per cent of the votes. This is a deline of z per cent compared to previous week.`
 
@@ -66,8 +66,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duo Reges: constructio 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duo Reges: constructio interrete. Aliter enim explicari, quod quaeritur, non potest. In quibus doctissimi illi veteres inesse quiddam caeleste et divinum putaverunt. Expressa vero in iis aetatibus, quae iam confirmatae sunt. Age sane, inquam.
 
+### Aktuelle Sonntagsfrage
 
 ![Latest poll](https://raw.githubusercontent.com/sueddeutsche/gen-better-polls/master/data/assets/current-polls.png)
+<img src="https://raw.githubusercontent.com/sueddeutsche/gen-better-polls/master/data/assets/current-polls.png" width="400" />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duo Reges: constructio interrete. Aliter enim explicari, quod quaeritur, non potest. In quibus doctissimi illi veteres inesse quiddam caeleste et divinum putaverunt. Expressa vero in iis aetatibus, quae iam confirmatae sunt. Age sane, inquam.
 
 
 _Quelle: http://www.wahlrecht.de_
@@ -81,8 +85,8 @@ _Quelle: http://www.wahlrecht.de_
 
 ### Usage
 
-*Requirements* NodeJS 4+, R 3.3+
-*Installation* Ensure you have nodeJs and R installed. Then run `Rscript install.R` in the project folder to install 
+**Requirements** NodeJS 4+, R 3.3+
+**Installation** Ensure you have nodeJs and R installed. Then run `Rscript install.R` in the project folder to install 
 the requried packages.
 
 > This project consists of a set of small scripts that may be used independently of each other. @see [tasks directory](./tasks)
@@ -93,6 +97,8 @@ To completely build the project run either `Rscript main.R` or `npm start`. This
 - perform the statistical transformation and save the result in `data/data-latest-average.csv`
 - create a visualization of the transformed data in `data/assets/plot.svg` and
 - updates the `README.md` with the latest scraped images and markdown snippets from `data/*.md`
+
+These tasks are also mapped in the `package.json` and may be started using `npm run <task>`
 
  
 #### Task: scraper
