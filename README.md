@@ -23,6 +23,8 @@ Therefore a smarter way of reporting about opinion polls is to get as many data 
 
 The most comprehensive overview of German opionion polls can be found on [Wahlrecht.de](http://www.wahlrecht.de), a website about maintained by volunteers. 
 
+We created the [R package `germanpolls`](https://github.com/cutterkom/germanpolls) for scraping this data. 
+
 ## Calculation of confidence intervall
 
 The data on [Wahlrecht.de](http://wahlrecht.de) has information on the party's survey result and the sample size. This offers the opportunity to calculate standard errors (se) and a confidence intervall (ci). 
