@@ -1,1 +1,1 @@
-install.packages(c("purrr", "selectr", "rvest", "XML", "dplyr", "magrittr", "zoo", "ggrepel", "directlabels"))
+install.packages(c("purrr", "selectr", "rvest", "XML", "dplyr", "magrittr", "zoo", "grid", "directlabels"))
