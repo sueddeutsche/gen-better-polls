@@ -1,5 +1,6 @@
 options(scipen = 999)
-farben = c("spd" = "#ce1b1b","afd" = "#009dd1","grüne" = "#349f29", "cdu.csu" = "#000000", "linke" = "#cc35a0")
+farben = c("spd" = "#ce1b1b","afd" = "#009dd1","grüne" = "#349f29", "cdu.csu" = "#222222", "linke" = "#cc35a0", "fdp" = "#ffb700")
+labels = c("spd" = "SPD", "afd" = "AFD","grüne" = "Grüne", "cdu.csu" = "CDU/CSU", "linke" = "Die Linke", "fdp" = "FDP")
 
 sztheme_points <- theme(
   strip.background = element_blank(),
@@ -13,13 +14,15 @@ sztheme_points <- theme(
   axis.title.y = element_blank(),
   panel.background = element_blank(),
   panel.border = element_blank(),
-  # panel.grid.major.y = element_line(color = "#000000", size = 0.2),
-  panel.grid.major.x = element_blank(),
+  panel.grid.major.x = element_line(color = "#eeeeee", size = 0.2),
+  # panel.grid.major = element_blank(),
   panel.grid.minor = element_blank(),
   legend.position = "none",
+  # legend.position = "bottom",
+  # legend.direction = "horizontal",
+  # legend.key.height = unit(.5, "in"),
+  # legend.key.width = unit(2,"in"),
   plot.background = element_blank())
-
-add_percent <- function(string, suffix = " %") paste0(string, suffix)
 
 sztheme_lines <- theme(
   strip.background = element_blank(),
