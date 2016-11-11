@@ -2,7 +2,7 @@
 
 At the Süddeutsche Zeitung Editor's Lab we were working on a better way to deal with opinion polls. 
 
-In autumn 2017 the next general election will be held. In the months to come opinion polls an even more important component of reporting about German politics. 
+In autumn 2017 the next general election will be held. In the months to come, opinion polls play an even more important component of reporting about German politics. 
 
 Traditionally, media outlets are reporting about in a new poll in the following style: `If election would be held today, party x would get y per cent of the votes. This is a deline of z per cent compared to previous week.`
 
