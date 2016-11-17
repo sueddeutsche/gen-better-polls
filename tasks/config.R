@@ -1,14 +1,14 @@
 options(scipen = 999)
 farben = c("spd" = "#ce1b1b","afd" = "#009dd1","grüne" = "#349f29", "cdu.csu" = "#222222", "linke" = "#cc35a0", "fdp" = "#ffb700")
-labels = c("spd" = "SPD", "afd" = "AFD","grüne" = "Grüne", "cdu.csu" = "CDU/CSU", "linke" = "Die Linke", "fdp" = "FDP")
+plabels = c("spd" = "SPD", "afd" = "AFD","grüne" = "Grüne", "cdu.csu" = "CDU/CSU", "linke" = "Die Linke", "fdp" = "FDP")
 
 sztheme_points <- theme(
   strip.background = element_blank(),
   strip.text.y = element_blank(),
   strip.text.x = element_blank(),
   # axis.line.x = element_line(color = "#000000"),
-  axis.text.y = element_blank(),
-  axis.text.x = element_blank(),
+  # axis.text.y = element_blank(),
+  axis.text = element_text(family = "SZoSansCond-Light", size = 18),
   axis.ticks = element_blank(),
   axis.title.x = element_blank(),
   axis.title.y = element_blank(),
@@ -18,8 +18,8 @@ sztheme_points <- theme(
   # panel.grid.major = element_blank(),
   panel.grid.minor = element_blank(),
   legend.position = "none",
-  # legend.position = "bottom",
-  # legend.direction = "horizontal",
+  # legend.position = "left",
+  # legend.direction = "vertical",
   # legend.key.height = unit(.5, "in"),
   # legend.key.width = unit(2,"in"),
   plot.background = element_blank())
