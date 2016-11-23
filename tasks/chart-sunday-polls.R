@@ -5,7 +5,8 @@ library(ggplot2)
 library(directlabels)
 source("tasks/config.R")
 
-df_ld <- read.csv("data/data-sunday.csv", stringsAsFactors = F, sep=",", encoding ="utf-8")
+df_ld <- read.csv("data/data-lastest-average.csv", stringsAsFactors = F, sep=",", encoding ="utf-8")
+
 sunday_data <- df_ld %>% arrange(desc(datum)) %>% filter(datum == datum[1])
 sunday_data <- sunday_data %>% filter(partei %in% c("cdu.csu", "spd", "grüne", "linke", "afd", "fdp"))
 sunday_data <- sunday_data[order(sunday_data$rolling_average),]
@@ -53,8 +54,8 @@ do_basic_gant_chart <- function(){
     sztheme_points +
     scale_y_continuous(breaks = - sunday_data$y, labels = plabels[sunday_data$partei]) +
     scale_x_continuous(labels = scales::percent, position = "top")
-    
-    # coord_flip()
+  
+  # coord_flip()
   # sundaychart <- sundaychart + geom_hline(yintercept = 7, size = 0.2)
   # sundaychart <- sundaychart + geom_errorbarh(aes(xmax = ci_higher, xmin = ci_lower), alpha = 0.6, height = .5)
 }
