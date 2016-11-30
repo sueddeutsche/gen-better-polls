@@ -33,8 +33,8 @@ gt <- ggplotGrob(bigchart)
 gt$layout$clip[gt$layout$name == "panel"] <- "off"
 bigchart 
 
-ggsave(file="data/assets/plot-rolling.png", plot=gt, dpi = 144, units = "in", width = 8.89, height = 5)
-# ggsave(file="data/assets/longterm-poll-article.png", plot=gt, dpi = 144, units = "in", width = 8.89, height = 5)
-# ggsave(file="data/assets/longterm-poll-hp.png", plot=gt, dpi = 144, units = "in", width = 7.78, height = 4.38)
-# ggsave(file="data/assets/longterm-poll-mobile.png", plot=gt, dpi = 144, units = "in", width = 4.44, height =  2.50)
+# ggsave(file="data/assets/plot-rolling.png", plot=gt, dpi = 144, units = "in", width = 8.89, height = 5)
+ggsave(file="data/assets/longterm-poll-article.png", plot=gt, dpi = 144, units = "in", width = 8.89, height = 5)
+ggsave(file="data/assets/longterm-poll-hp.png", plot=gt, dpi = 144, units = "in", width = 7.78, height = 4.38)
+ggsave(file="data/assets/longterm-poll-mobile.png", plot=gt, dpi = 144, units = "in", width = 4.44, height = 3.33)
 
