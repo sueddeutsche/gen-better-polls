@@ -24,9 +24,9 @@ bigchart <-  ggplot(data = df_se, aes(x = datum)) +
   geom_line(aes(y = rolling_average, color = partei), size = 1, linetype = 3) +
   geom_dl(aes(x = datum, y = rolling_average, label = get_label_value(partei)), color = farben[df_se$partei], method = list(dl.trans(x = x + .2, cex = 1.5, fontfamily="SZoSansCond-Light"),"calc.boxes", "last.bumpup")) #+
 bigchart <- bigchart + sztheme_lines +
-  scale_colour_manual(values = farben) +
-  scale_fill_manual(values = farben) + 
-  scale_x_date(date_labels = "%Y", limits = as.Date(c("2013-09-22", NA)), expand = c(0, 0))+#, breaks = as.Date(c("2014","2015","2016","2017"), "%Y")) +
+  scale_colour_manual(values = farben, labels = NULL, breaks = NULL) +
+  scale_fill_manual(values = farben, labels = plabels) +  guides(fill = guide_legend(override.aes = list(alpha = 1), nrow = 1)) +
+  scale_x_date(date_labels = "%Y", limits = as.Date(c("2013-09-22", NA)), expand = c(0, 0))
   scale_y_continuous(labels = scales::percent)
 
 gt <- ggplotGrob(bigchart)

@@ -47,6 +47,13 @@ sztheme_lines <- theme(
   panel.spacing = unit(c(0,0,0,0), "lines"),
   plot.background = element_blank(),
   plot.margin = unit(c(0,3.5,0.2,0.2), "lines"),
-  legend.position = "none",
+  legend.margin = margin(0.8, 0, 0.6, 0, "cm"),
+  legend.background = element_blank(),
+  legend.title = element_blank(),
+  legend.position = "top",
+  legend.direction = "vertical",
+  legend.key = element_blank(),
+  legend.key.size = unit(0.2, "in"),
+  legend.text = element_text(family = "SZoSans-Light", size = 16, colour = "#999999"),
   text = element_text(size = 23, family = "SZoSansCond-Light")
 )
