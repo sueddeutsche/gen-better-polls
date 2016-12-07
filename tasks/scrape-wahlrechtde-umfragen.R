@@ -49,7 +49,7 @@ df %<>%
   # filter(grepl("%", `cdu/csu`)) %>%
   filter(!grepl("Bundestagswahl", befragte)) %>%
   rename(nw_un = `nichtwähler/unentschl.`) %>%
-    select(institut, datum, befragte, zeitraum, `cdu/csu`, spd, grüne, fdp, linke, afd, sonstige, nw_un,fw) %>%
+    select(institut, datum, befragte, zeitraum, `cdu/csu`, spd, `grüne`, fdp, linke, afd, sonstige, nw_un,fw) %>%
   mutate(typ = ifelse(
     grepl("O • ", befragte), "online",
     ifelse(grepl("T • ", befragte), "telefon", "keineangabe")))
