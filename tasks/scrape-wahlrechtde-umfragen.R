@@ -22,11 +22,11 @@ df <-
     rdf <- list()
     table <- html_node(page, ".wilko")
     table_head <- html_nodes(table, xpath = "//thead//th") %>% html_text()
-   
+
     rdf[["datum"]] <- html_nodes(page, xpath = "//table//tbody//tr//td[1]") %>% html_text()
     rdf[["institut"]] <- rep(i, length = length(rdf[["datum"]]))
-    
-    for(head_el in seq_along(header)){ 
+
+    for(head_el in seq_along(header)){
       vec <- vector()
       hindex <- match(header[head_el], table_head)
       # fuck up, extra loop because table of politbarometer is strange structured (td-element instead of th-element)
@@ -34,7 +34,7 @@ df <-
         hindex = hindex + 1
       }
       checkvec <- html_nodes(page, xpath = paste0("//table//tbody//tr//td[", hindex,"]")) %>% html_text()
-      
+
       if (length(checkvec) > 0){
         vec <- checkvec
         rdf[[header[head_el]]] <- vec
@@ -50,7 +50,7 @@ df %<>%
   # filter(grepl("%", `cdu/csu`)) %>%
   filter(!grepl("Bundestagswahl", befragte)) %>%
   rename(nw_un = `nichtwähler/unentschl.`) %>%
-    select(institut, datum, befragte, zeitraum, `cdu/csu`, spd, grüne, fdp, linke, afd, sonstige, nw_un,fw) %>%
+    select(institut, datum, befragte, zeitraum, `cdu/csu`, spd, `grüne`, fdp, linke, afd, sonstige, nw_un,fw) %>%
   mutate(typ = ifelse(
     grepl("O • ", befragte), "online",
     ifelse(grepl("T • ", befragte), "telefon", "keineangabe")))
