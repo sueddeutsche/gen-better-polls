@@ -16,7 +16,8 @@ df <-
   map_df(institute, function(i) {
     # keep calm! Fortschrittsbalken
     cat(".")
-    page <- paste0("http://www.wahlrecht.de/umfragen/", i, ".htm") %>% read_html()
+    path <- paste0("http://www.wahlrecht.de/umfragen/", i, ".htm")
+    page <- read_html(path, encoding = "utf-8")
     
     rdf <- list()
     table <- html_node(page, ".wilko")
