@@ -43,14 +43,20 @@ df_standard_error <- df_raw_data %>%
     ci_lower = round(anteil - 1.96 * se, 5),
     ci_higher = round(anteil + 1.96 * se, 5)) %>%
   arrange(desc(datum)) %>% 
-  select(datum, partei, ci_higher, ci_lower)
+  select(datum, partei, institut, ci_higher, ci_lower)
 
-write.csv(df_test_standard_error, file="data/data-standarderror.csv", row.names = F, quote = F)
+write.csv(df_standard_error, file="data/data-standarderror.csv", row.names = F, quote = F)
+
+df_ci_lower <- df_standard_error %>% 
+  group_by(datum, partei) %>%
+  mutate(ci_lower_grouped_by_date = mean(ci_lower)) %>%
+  unique() %>% 
+  spread( -institut, fill = NA) #>% 
+  # select(datum, institut, ci_lower_grouped_by_date)
+  # tabelle umbauen institute in spalten
 
 
-
-
-###### old versiobn: one df for everything
+###### old version: one df for everything
 
 # calculate standard error and the confidence intervall
 df_se <- df_l %>%
