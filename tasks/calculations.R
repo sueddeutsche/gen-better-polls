@@ -1,11 +1,4 @@
-library(dplyr)
-library(rvest)
-library(purrr)
-library(magrittr)
-library(tidyr)
-library(ggplot2)
-library(zoo)
-library(XML)
+
 
 
 df_l <- read.csv("data/data-input-longform.csv", stringsAsFactors = FALSE)
