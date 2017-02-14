@@ -1,10 +1,3 @@
-library("purrr")
-library("rvest")
-library("XML")
-library("magrittr")
-library("dplyr")
-library("tidyr")
-library("zoo")
 
 
 # scrape data
