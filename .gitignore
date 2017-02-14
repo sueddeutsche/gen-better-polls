@@ -43,3 +43,6 @@ assetdata
 debug.html
 *.csv
 *.svg
+charts-data-check.R
+data/assets/altes-ribbon.png
+data/assets/neues-ribbon.png
