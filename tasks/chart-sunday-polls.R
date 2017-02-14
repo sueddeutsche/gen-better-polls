@@ -1,8 +1,4 @@
-library(dplyr)
-library(magrittr)
-library(tidyr)
-library(ggplot2)
-library(directlabels)
+
 source("tasks/config.R")
 
 df_ld <- read.csv("data/data-lastest-average.csv", stringsAsFactors = F, sep = ",", encoding = "utf-8")

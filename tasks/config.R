@@ -1,3 +1,19 @@
+# data wrangling
+library(dplyr)
+library(rvest)
+library(purrr)
+library(magrittr)
+library(tidyr)
+library(zoo)
+library(XML)
+
+# graphics
+library(ggplot2)
+library(directlabels)
+library(grid)
+
+
+
 options(scipen = 999)
 farben = c("spd" = "#ce1b1b","afd" = "#009dd1","grüne" = "#349f29", "cdu.csu" = "#222222", "linke" = "#cc35a0", "fdp" = "#ffb700")
 plabels = c("spd" = "SPD", "afd" = "AFD","grüne" = "Grüne", "cdu.csu" = "CDU/CSU", "linke" = "Die Linke", "fdp" = "FDP")
