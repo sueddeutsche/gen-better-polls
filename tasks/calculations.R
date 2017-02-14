@@ -51,7 +51,7 @@ df_ci_lower <- df_standard_error %>%
   group_by(datum, partei) %>%
   mutate(ci_lower_grouped_by_date = mean(ci_lower)) %>%
   unique() %>% 
-  spread( -institut, fill = NA) #>% 
+  spread(institut, ci_lower_grouped_by_date, fill = NA) #>% 
   # select(datum, institut, ci_lower_grouped_by_date)
   # tabelle umbauen institute in spalten
 
