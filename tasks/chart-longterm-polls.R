@@ -1,11 +1,3 @@
-library(dplyr)
-library(magrittr)
-library(tidyr)
-library(ggplot2)
-library(directlabels)
-library(grid)
-library(tidyr)
-source("tasks/config.R")
 
 df_se <- read.csv("data/data-transformed.csv", stringsAsFactors = F, sep=",", encoding ="utf-8")
 df_se <- df_se %>% filter(partei %in% c("cdu.csu", "spd", "grüne", "linke", "afd", "fdp"))

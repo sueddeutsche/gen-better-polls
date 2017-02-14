@@ -1,6 +1,4 @@
 
-source("tasks/config.R")
-
 df_ld <- read.csv("data/data-lastest-average.csv", stringsAsFactors = F, sep = ",", encoding = "utf-8")
 
 sunday_data <- df_ld %>% arrange(desc(datum)) %>% filter(datum == datum[1])
