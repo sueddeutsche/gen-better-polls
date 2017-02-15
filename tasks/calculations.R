@@ -47,6 +47,15 @@ df_standard_error <- df_raw_data %>%
 
 write.csv(df_standard_error, file="data/data-standarderror.csv", row.names = F, quote = F)
 
+find_missing_points <- function(date_younger, date_older, date_missing, ci_younger, ci_older)
+{
+  adjacent_side_current <- as.numeric(difftime(date_younger, date_older, units = c("days")))
+  adjacent_side_new <- as.numeric(difftime(as.Date(date_missing),as.Date(date_older), units = c("days")))
+  
+  ci_missing <- ci_older + ((ci_younger-ci_older)/adjacent_side_current)*adjacent_side_new
+  return(ci_missing)
+}
+
 df_ci_lower <- df_standard_error %>% 
   group_by(datum, partei) %>%
   mutate(ci_lower_grouped_by_date = mean(ci_lower)) %>%
