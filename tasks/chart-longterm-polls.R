@@ -1,3 +1,13 @@
+library(dplyr)
+library(rvest)
+library(purrr)
+library(magrittr)
+library(tidyr)
+library(ggplot2)
+library(zoo)
+library(XML)
+source("tasks/config.R")
+
 
 df_se <- read.csv("data/data-transformed.csv", stringsAsFactors = F, sep=",", encoding ="utf-8")
 df_se <- df_se %>% filter(partei %in% c("cdu.csu", "spd", "grüne", "linke", "afd", "fdp"))
@@ -18,7 +28,7 @@ basechart <-  ggplot(data = df_se, aes(x = datum)) +
 basechart <- basechart + 
   scale_colour_manual(values = farben, labels = NULL, breaks = NULL) +
   scale_fill_manual(values = farben, labels = plabels) + guides(fill = guide_legend(override.aes = list(alpha = 1), nrow = 1)) +
-  scale_x_date(date_labels = "%Y", limits = as.Date(c("2013-09-22", NA)), expand = c(0, 0)) +
+  scale_x_date(date_labels = "%m/%Y", limits = as.Date(c("2015-01-01", NA)), expand = c(0, 0)) +
   scale_y_continuous(labels = scales::percent)
 
 article_chart <- basechart + sztheme_lines 
