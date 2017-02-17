@@ -47,7 +47,7 @@ df_standard_error <- df_raw_data %>%
 
 write.csv(df_standard_error, file="data/data-standarderror.csv", row.names = F, quote = F)
 
-find_missing_points <- function(date_younger, date_older, date_missing, ci_younger, ci_older)
+get_missing_point <- function(date_younger, date_older, date_missing, ci_younger, ci_older)
 {
   adjacent_side_current <- as.numeric(difftime(date_younger, date_older, units = c("days")))
   adjacent_side_new <- as.numeric(difftime(as.Date(date_missing),as.Date(date_older), units = c("days")))
@@ -58,10 +58,12 @@ find_missing_points <- function(date_younger, date_older, date_missing, ci_young
 
 df_ci_lower <- df_standard_error %>% 
   group_by(datum, partei) %>%
+  # filter(partei %in% c("cdu.csu", "spd", "grüne", "linke", "afd", "fdp")) %>% 
+  filter(partei %in% c("CDU/CSU", "SPD", "Grüne", "Linke", "AfD", "FDP")) %>% 
   mutate(ci_lower_grouped_by_date = mean(ci_lower)) %>%
   unique() %>% 
-  spread(institut, ci_lower_grouped_by_date, fill = NA) #>% 
-  # select(datum, institut, ci_lower_grouped_by_date)
+  select(datum, partei, institut, ci_lower_grouped_by_date) %>% 
+  spread(institut, ci_lower_grouped_by_date, fill = NA) 
   # tabelle umbauen institute in spalten
 
 
@@ -78,7 +80,7 @@ df_se <- df_l %>%
     'rolling_average' = rollapply(anteil, 10, mean, align="right", na.pad = TRUE, na.rm = TRUE)) %>%
   arrange(desc(datum))
 
-df_se[8:11] <- round(df_se[8:11],5)
+df_se[,c("se","ci_lower", "ci_higher","rolling_average")] <- round(df_se[,c("se","ci_lower", "ci_higher","rolling_average")],5)
 
 write.csv(df_se, file="data/data-transformed.csv", row.names = F, quote = F)
 
