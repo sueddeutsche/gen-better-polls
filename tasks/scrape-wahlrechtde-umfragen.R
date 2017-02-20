@@ -1,4 +1,8 @@
-
+library(purrr)
+library(rvest)
+library(dplyr)
+library(magrittr)
+library(tidyr)
 
 # scrape data
 institute <- c("allensbach", "emnid", "forsa", "politbarometer", "gms", "dimap", "insa")

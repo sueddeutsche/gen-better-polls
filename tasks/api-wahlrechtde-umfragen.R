@@ -1,4 +1,5 @@
 library(xml2)
+library(purrr)
 
 datum <- vector()
 institut <- vector()

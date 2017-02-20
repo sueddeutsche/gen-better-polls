@@ -1,3 +1,5 @@
+library(zoo) # rollapply
+
 ######
 # dataframes
 # df_raw_data: input with raw data from wahlrecht.de
