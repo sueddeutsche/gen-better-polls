@@ -1,6 +1,5 @@
-library(dplyr)
-library(tidyr)
-library(zoo) # rollapply
+source("tasks/config.R")
+
 
 ######
 # dataframes

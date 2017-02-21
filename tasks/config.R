@@ -1,11 +1,11 @@
 # data wrangling
 library(dplyr)
-library(rvest)
+#library(rvest)
 library(purrr)
 library(magrittr)
 library(tidyr)
 library(zoo)
-library(XML)
+library(xml2)
 
 # graphics
 library(ggplot2)

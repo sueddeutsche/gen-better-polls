@@ -1,5 +1,5 @@
-library(xml2)
-library(purrr)
+source("tasks/config.R")
+
 
 datum <- vector()
 institut <- vector()
