@@ -30,13 +30,14 @@ api_data <- data.frame(datum, institut, befragte, partei, anteil, stringsAsFacto
 # refine data
 api_data$befragte <- as.numeric(api_data$befragte)
 api_data$anteil <- as.numeric(api_data$anteil)
-api_data <- filter(api_data, !is.na(api_data$befragte))
 
 refine_party <- function (p){
   switch (p, cxu = "CDU/CSU", spd = "SPD",afd = "AfD", grn = "Grüne", fpd = "FDP", lnk = "Linke", son = "Sonstige", p)
 }
-api_data$partei <- apply(api_data["partei"], 1, refine_party)
-api_data$anteil <- apply(api_data["anteil"], 1, function(x) x/100)
+api_data$partei <- apply(api_data["partei"],1, refine_party)
+api_data$anteil <- apply(api_data["anteil"],1, function(x) x/100)
+api_data <- as.data.frame(api_data)
+api_data <- filter(api_data, !is.na(api_data$befragte))
 
-write.csv(api_data, file="data/data-input-longform.csv", row.names = F, quote = F)
+write.csv(api_data, file="data/data-input-longform.csv", quote = F)
 
