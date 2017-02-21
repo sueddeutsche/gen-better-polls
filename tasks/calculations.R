@@ -6,7 +6,7 @@
 
 # read raw data 
 df_raw_data <- read.csv("data/data-input-longform.csv", stringsAsFactors = FALSE)
-df_l <- read.csv("data/data-input-longform.csv", stringsAsFactors = FALSE) # old verisobn
+df_l <- read.csv("data/data-input-longform.csv", stringsAsFactors = FALSE) # old version
 
 ###### calculate rolling average
 
@@ -60,13 +60,12 @@ df_ci_lower <- df_standard_error %>%
   group_by(datum, partei) %>%
   # filter(partei %in% c("cdu.csu", "spd", "grüne", "linke", "afd", "fdp")) %>% 
   filter(partei %in% c("CDU/CSU", "SPD", "Grüne", "Linke", "AfD", "FDP")) %>% 
-  mutate(ci_lower_grouped_by_date = mean(ci_lower)) %>%
   unique() %>% 
-  select(datum, partei, institut, ci_lower_grouped_by_date) %>% 
-  spread(institut, ci_lower_grouped_by_date, fill = NA) 
+  select(datum, partei, institut, ci_lower) %>% 
+  spread(institut, ci_lower, fill = NA)
   # tabelle umbauen institute in spalten
 
-
+df_datum_test <- df_standard_error$datum %>% unique()
 ###### old version: one df for everything
 
 # calculate standard error and the confidence intervall
