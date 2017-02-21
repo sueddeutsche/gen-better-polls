@@ -1,3 +1,5 @@
+library(dplyr)
+library(tidyr)
 library(zoo) # rollapply
 
 ######
