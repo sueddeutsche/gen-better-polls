@@ -19,6 +19,9 @@ df_ci$ci_lower <- as.numeric(df_ci$ci_lower)
 df_ci$ci_higher <- as.numeric(df_ci$ci_higher)
 str(df_ci)
 
+party <- unique(df_ci$partei)
+
+
 latest_values <- arrange(df_se, desc(datum)) %>% filter(datum == datum[1])
 df_se <- filter(df_se, datum > "2013-09-22")
 
@@ -27,18 +30,18 @@ get_label_value <- function (partei){
   label = paste0("~",round(latest_values$rolling_average[index]*100, digits = 0),"%")
 }
 
-basechart <-  ggplot() +
-  geom_ribbon(data = df_ci, aes( x= datum, ymin = ci_lower, ymax = ci_higher, fill=partei, group=partei), alpha = .5) +
+basechart <- ggplot() +
+  geom_ribbon(data = df_ci, aes( x= datum, ymin = ci_lower, ymax = ci_higher, fill=partei, group=partei), alpha = .3) +
   geom_line(data = df_se,aes(x = datum, y = rolling_average, color = partei), size = 1, linetype = 3) +
   geom_dl(data = df_se,aes(x = datum, y = rolling_average, label = get_label_value(partei)), color = farben[df_se$partei], method = list(dl.trans(x = x + .2, cex = 1.5, fontfamily="SZoSansCond-Light"),"calc.boxes", "last.bumpup")) #+
 basechart <- basechart + 
-  scale_colour_manual(values = farben, labels = NULL, breaks = NULL) +
-  scale_fill_manual(values = farben, labels = df_se$partei) + guides(fill = guide_legend(override.aes = list(alpha = 1), nrow = 1)) +
+  scale_colour_manual(values = farben[party], labels = NULL, breaks = NULL) +
+  scale_fill_manual(values = farben[plabels ], labels = plabels) + guides(fill = guide_legend(override.aes = list(alpha = 1), nrow = 1)) +
   scale_x_date(date_labels = "%m/%Y", limits = as.Date(c("2015-01-01", NA)), expand = c(0, 0)) +
   scale_y_continuous(labels = scales::percent)
 
 article_chart <- basechart + sztheme_lines 
-mobile_chart <- basechart + sztheme_lines + sztheme_lines_mobile 
+mobile_chart <- basechart + sztheme_lines + sztheme_lines_mobile  
   
 article_chart <- ggplotGrob(article_chart)
 article_chart$layout$clip[article_chart$layout$name == "panel"] <- "off"
