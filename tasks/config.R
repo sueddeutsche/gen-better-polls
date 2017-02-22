@@ -15,7 +15,8 @@ library(grid)
 
 
 options(scipen = 999)
-farben = c("spd" = "#ce1b1b","afd" = "#009dd1","grüne" = "#349f29", "cdu.csu" = "#222222", "linke" = "#cc35a0", "fdp" = "#ffb700")
+farben = c("SPD" = "#ce1b1b","AfD" = "#009dd1","Grüne" = "#349f29", "CDU/CSU" = "#222222", "Linke" = "#cc35a0", "FDP" = "#ffb700")
+# farben = c("spd" = "#ce1b1b","afd" = "#009dd1","grüne" = "#349f29", "cdu.csu" = "#222222", "linke" = "#cc35a0", "fdp" = "#ffb700")
 plabels = c("spd" = "SPD", "afd" = "AFD","grüne" = "Grüne", "cdu.csu" = "CDU/CSU", "linke" = "Die Linke", "fdp" = "FDP")
 
 sztheme_points <- theme(
