@@ -1,3 +1,5 @@
+source("tasks/ci-interpolation.R")
+
 ######
 # dataframes
 # df_raw_data: input with raw data from wahlrecht.de
@@ -6,7 +8,7 @@
 
 # read raw data 
 df_raw_data <- read.csv("data/data-input-longform.csv", stringsAsFactors = FALSE)
-df_l <- read.csv("data/data-input-longform.csv", stringsAsFactors = FALSE) # old verisobn
+df_l <- read.csv("data/data-input-longform.csv", stringsAsFactors = FALSE) # old version
 
 ###### calculate rolling average
 
@@ -47,24 +49,24 @@ df_standard_error <- df_raw_data %>%
 
 write.csv(df_standard_error, file="data/data-standarderror.csv", row.names = F, quote = F)
 
-get_missing_point <- function(date_younger, date_older, date_missing, ci_younger, ci_older)
-{
-  adjacent_side_current <- as.numeric(difftime(date_younger, date_older, units = c("days")))
-  adjacent_side_new <- as.numeric(difftime(as.Date(date_missing),as.Date(date_older), units = c("days")))
-  
-  ci_missing <- ci_older + ((ci_younger-ci_older)/adjacent_side_current)*adjacent_side_new
-  return(ci_missing)
-}
-
 df_ci_lower <- df_standard_error %>% 
   group_by(datum, partei) %>%
-  # filter(partei %in% c("cdu.csu", "spd", "grüne", "linke", "afd", "fdp")) %>% 
   filter(partei %in% c("CDU/CSU", "SPD", "Grüne", "Linke", "AfD", "FDP")) %>% 
-  mutate(ci_lower_grouped_by_date = mean(ci_lower)) %>%
   unique() %>% 
-  select(datum, partei, institut, ci_lower_grouped_by_date) %>% 
-  spread(institut, ci_lower_grouped_by_date, fill = NA) 
-  # tabelle umbauen institute in spalten
+  select(datum, partei, institut, ci_lower)
+
+df_ci_higher <- df_standard_error %>% 
+  group_by(datum, partei) %>%
+  filter(partei %in% c("CDU/CSU", "SPD", "Grüne", "Linke", "AfD", "FDP")) %>% 
+  unique() %>% 
+  select(datum, partei, institut, ci_higher)
+
+df_datum <- df_standard_error$datum %>% unique()
+df_datum <- as.data.frame(df_datum)
+names(df_datum) <- c("datum")
+
+df_ci_interpolated <- get_all_parties()
+write.csv(df_ci_interpolated, file="data/data-ci-values.csv", row.names = F, quote = F)
 
 
 ###### old version: one df for everything
