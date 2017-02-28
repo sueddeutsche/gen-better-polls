@@ -61,11 +61,17 @@ df$datum <- as.Date(df$datum, "%d.%m.%Y")
 df %<>% as.data.frame()
 df <- filter(df, !is.na(df$befragte))
 
-write.csv(df, file="data/data-input.csv", row.names = F, quote = F)
+# write.csv(df, file="data/data-input.csv", row.names = F, quote = F)
 
+refine_party <- function (p){
+  switch (p, cdu.csu = "CDU/CSU", spd = "SPD",afd = "AfD", `grüne` = "Grüne", fdp = "FDP", linke = "Linke", sonstige = "sonstige", nw_un = "nw_un", fw = "fw", p)
+}
+# `cdu/csu`, spd, `grüne`, fdp, linke, afd,
 # transform data set to longform
 df_l <- df %>% gather(partei, anteil, -institut, -datum, -befragte, -zeitraum, -typ)
 df_l$anteil <- df_l$anteil/100
+unique(df_l$partei)
+df_l$partei <- apply(df_l["partei"],1, refine_party)
 
 write.csv(df_l, file="data/data-input-longform.csv", row.names = F, quote = F)
 
