@@ -10,6 +10,9 @@ source("tasks/ci-interpolation.R")
 df_raw_data <- read.csv("data/data-input-longform.csv", stringsAsFactors = FALSE)
 df_l <- read.csv("data/data-input-longform.csv", stringsAsFactors = FALSE) # old version
 
+df_raw_data <- df_raw_data %>% filter(partei %in% c("CDU/CSU", "SPD", "Grüne", "Linke", "AfD", "FDP"))
+
+
 ###### calculate rolling average
 
 df_rolling_average <- df_raw_data %>%
@@ -49,17 +52,15 @@ df_standard_error <- df_raw_data %>%
 
 write.csv(df_standard_error, file="data/data-standarderror.csv", row.names = F, quote = F)
 
-df_ci_lower <- df_standard_error %>% 
+df_ci <- df_standard_error %>% 
   group_by(datum, partei) %>%
-  filter(partei %in% c("CDU/CSU", "SPD", "Grüne", "Linke", "AfD", "FDP")) %>% 
-  unique() %>% 
-  select(datum, partei, institut, ci_lower)
+  unique()
 
-df_ci_higher <- df_standard_error %>% 
-  group_by(datum, partei) %>%
-  filter(partei %in% c("CDU/CSU", "SPD", "Grüne", "Linke", "AfD", "FDP")) %>% 
-  unique() %>% 
+df_ci_higher <- df_ci %>% 
   select(datum, partei, institut, ci_higher)
+
+df_ci_lower <- df_ci %>%
+  select(datum, partei, institut, ci_lower)
 
 df_datum <- df_standard_error$datum %>% unique()
 df_datum <- as.data.frame(df_datum)
@@ -87,34 +88,32 @@ df_se[,c("se","ci_lower", "ci_higher","rolling_average")] <- round(df_se[,c("se"
 write.csv(df_se, file="data/data-transformed.csv", row.names = F, quote = F)
 
 
-
-
 ################
 #### latest average poll/sunday
 #### se variant: average sample sizes
 ################
 
-df_ave <- df_l %>%
-  arrange(datum) %>%
-  group_by(partei) %>%
-  mutate(
-    'rolling_average' = rollapply(anteil, 10, mean, align="right", na.pad = TRUE),
-    'average_sample_size' = rollapply(befragte, 10, mean, na.pad = TRUE, align = "right", na.rm = TRUE)) %>%
-  select(partei, datum, rolling_average, average_sample_size)
+# df_ave <- df_l %>%
+#   arrange(datum) %>%
+#   group_by(partei) %>%
+#   mutate(
+#     'rolling_average' = rollapply(anteil, 10, mean, align="right", na.pad = TRUE),
+#     'average_sample_size' = rollapply(befragte, 10, mean, na.pad = TRUE, align = "right", na.rm = TRUE)) %>%
+#   select(partei, datum, rolling_average, average_sample_size)
+# 
+# #df_ave[3:4] <- round(df_ave[3:4],2)
+# 
+# write.csv(df_ave, file="data/data-rolling-average.csv", row.names = F, quote = F)
 
-#df_ave[3:4] <- round(df_ave[3:4],2)
 
-write.csv(df_ave, file="data/data-rolling-average.csv", row.names = F, quote = F)
-
-
-df_ave_latest <-
-  df_ave %>% 
-  mutate(se = sqrt(rolling_average * (1-rolling_average) / average_sample_size),
-         ci_lower = rolling_average - 1.96 * se,
-         ci_higher = rolling_average + 1.96 * se)  %>%
-  arrange(desc(datum)) %>% 
-  filter(datum == datum[1])
-#df_ave_latest[3:5] <- round(df_ave_latest[3:5],2)
-
-write.csv(df_ave_latest, file="data/data-lastest-average.csv", row.names = F, quote = F)
+# df_ave_latest <-
+#   df_rolling_average %>% 
+#   mutate(se = sqrt(rolling_average * (1-rolling_average) / average_sample_size),
+#          ci_lower = rolling_average - 1.96 * se,
+#          ci_higher = rolling_average + 1.96 * se)  %>%
+#   arrange(desc(datum)) %>% 
+#   filter(datum == datum[1])
+# #df_ave_latest[3:5] <- round(df_ave_latest[3:5],2)
+# 
+# write.csv(df_ave_latest, file="data/data-lastest-average.csv", row.names = F, quote = F)
 
