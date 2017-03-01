@@ -21,8 +21,6 @@ df_ci$ci_higher <- as.numeric(df_ci$ci_higher)
 
 ci_party <- unique(df_ci$partei)
 se_party <- unique(df_se$partei)
-print(length(ci_party))
-print((se_party))
 
 latest_values <- arrange(df_se, desc(datum)) %>% filter(datum == datum[1])
 startDatum <- "2015-01-01"
@@ -31,17 +29,17 @@ df_se <- filter(df_se, datum > startDatum)
 # andere Namen für die Linien als das Standardlabel
 get_label_value <- function (partei){
   index = match(partei, latest_values$partei)
-  label = paste0("~",round(latest_values$rolling_average[index]*100, digits = 0),"%")
+  label = paste0("~",round(latest_values$rolling_average[index]*100, digits = 1),"%")
 }
 
 # Diagramm zusammen bauen
 basechart <- ggplot() +
-  geom_ribbon(data = df_ci, aes( x= datum, ymin = ci_lower, ymax = ci_higher, fill=partei, group=partei), alpha = .3) +
+  geom_ribbon(data = df_ci, aes( x= datum, ymin = ci_lower, ymax = ci_higher, fill=partei, group=partei), alpha = .6) +
   geom_line(data = df_se,aes(x = datum, y = rolling_average, color = partei), size = 1, linetype = 3) +
-  geom_dl(data = df_se,aes(x = datum, y = rolling_average, label = get_label_value(partei)), color = farben[df_se$partei], method = list(dl.trans(x = x + .2, cex = 1.5, fontfamily="SZoSansCond-Light"),"calc.boxes", "last.bumpup")) #+
+  geom_dl(data = df_se,aes(x = datum, y = rolling_average, label = get_label_value(partei)), color = farben[df_se$partei], method = list(dl.trans(x = x + .2, cex = 1.5, fontfamily="SZoSansCond-Light"),"calc.boxes", "last.bumpup"))
 basechart <- basechart + 
   scale_colour_manual(values = farben[plabels], labels = NULL, breaks = NULL) +
-  scale_fill_manual(values = farben[plabels ], labels = plabels) + guides(fill = guide_legend(override.aes = list(alpha = 1), nrow = 1)) +
+  scale_fill_manual(values = farben_ci[plabels ], labels = plabels) + guides(fill = guide_legend(override.aes = list(alpha = 1), nrow = 1)) +
   scale_x_date(date_labels = "%m/%Y", limits = as.Date(c(startDatum, NA)), expand = c(0, 0)) +
   scale_y_continuous(labels = scales::percent)
 
