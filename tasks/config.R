@@ -16,6 +16,7 @@ library(grid)
 
 options(scipen = 999)
 farben = c("SPD" = "#ce1b1b","AfD" = "#009dd1","Grüne" = "#349f29", "CDU/CSU" = "#222222", "Linke" = "#cc35a0", "FDP" = "#ffb700")
+farben_ci = c("SPD" = "#eba4a4","AfD" = "#99d8ed","Grüne" = "#aed9a9", "CDU/CSU" = "#bbbbbb", "Linke" = "#ebaed9", "FDP" = "#ffe299")
 # farben = c("spd" = "#ce1b1b","afd" = "#009dd1","grüne" = "#349f29", "cdu.csu" = "#222222", "linke" = "#cc35a0", "fdp" = "#ffb700")
 plabels = c("SPD" = "SPD", "AfD" = "AfD","Grüne" = "Grüne", "CDU/CSU" = "CDU/CSU", "Linke" = "Linke", "FDP" = "FDP")
 # plabels = c("spd" = "SPD", "afd" = "AFD","grüne" = "Grüne", "cdu.csu" = "CDU/CSU", "linke" = "Die Linke", "fdp" = "FDP")
