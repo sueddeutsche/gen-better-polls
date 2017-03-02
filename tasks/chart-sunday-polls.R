@@ -13,9 +13,9 @@ sunday_data <- mutate(sunday_data, y = as.numeric(order(sunday_data$rolling_aver
 
 do_basic_table_chart <- function(){
   sundaychart <-  ggplot(data = sunday_data, aes(x = rolling_average, y = -y, xmin = ci_lower, xmax = ci_higher , ymax = -y + 0.3, ymin = -y -0.3, color = partei)) +
-    geom_rect(aes(xmin = 0, xmax= ci_lower, fill = partei, color = NA)) +
-    geom_rect(aes(fill = partei, color = NA)) + scale_fill_manual(values = farben_ci) +
-    geom_point(aes(size = 1))+
+    geom_rect(aes(xmin = 0, xmax= ci_lower, fill = partei, color = NA), alpha = .9) +
+    geom_rect(aes(fill = partei, color = NA), alpha = .5) + scale_fill_manual(values = farben) +
+    geom_point(size = 3)+
     scale_colour_manual(values = farben) +
     coord_cartesian(xlim = c(0, 0.5) ) +
     sztheme_points +
@@ -23,9 +23,9 @@ do_basic_table_chart <- function(){
     scale_x_continuous(labels = scales::percent, position = "top")
 
   article_chart <- sundaychart + geom_label(aes(x = ci_higher,
-    label = paste0("~",round(sunday_data$rolling_average*100, digits = 1), "%")), fill = NA, label.size = 0, hjust = - 0.2, family="SZoSansCond-Light", size = 6.35)
+    label = paste0(round(sunday_data$ci_lower*100, digits = 0), "-", round(sunday_data$ci_higher*100, digits = 0), "%")), fill = NA, label.size = 0, hjust = - 0.2, family="SZoSansCond-Light", size = 6.35)
   mobile_chart <- sundaychart + geom_label(aes(x = ci_higher,
-    label = paste0("~",round(sunday_data$rolling_average*100, digits = 1), "%")), fill = NA, label.size = 0, hjust = - 0.1, family="SZoSansCond-Light", size = 6.35)
+    label = paste0(round(sunday_data$ci_lower*100, digits = 0), "-", round(sunday_data$ci_higher*100, digits = 0), "%")), fill = NA, label.size = 0, hjust = - 0.1, family="SZoSansCond-Light", size = 6.35)
   plot(article_chart)
   ggsave(file="data/assets/sunday-polls-mobile.png", plot = mobile_chart, units = "in", dpi = 144, width = 4.45, height = 3.0)
   ggsave(file="data/assets/sunday-polls-article.png", plot= article_chart, units = "in", dpi = 144, width = 8.89, height = 3.0)
