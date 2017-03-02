@@ -114,8 +114,8 @@ get_all_parties <- function(){
   df_comb <-c("datum", "partei", "ci_lower", "ci_higher")
   for(party in seq_along(parties)){
     p <- get_interpolate_ci(parties[party])
-    # head(p)
     df_comb <-rbind(df_comb, p)  
+    df_comb <- df_comb[-1,]
   }
   return(df_comb)
 }
