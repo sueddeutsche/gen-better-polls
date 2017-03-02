@@ -9,7 +9,7 @@ library(XML)
 source("tasks/config.R")
 
 
-df_se <- read.csv("data/data-rolling-average-fake.csv", stringsAsFactors = F, sep=",", encoding ="utf-8")
+df_se <- read.csv("data/data-rolling-average.csv", stringsAsFactors = F, sep=",", encoding ="utf-8")
 df_ci <- read.csv("data/data-ci-values.csv", stringsAsFactors = F, sep=",", encoding ="utf-8")
 
 # set formats
@@ -18,9 +18,6 @@ df_se$datum <- as.Date(df_se$datum, "%Y-%m-%d")
 df_ci$datum <- as.Date(df_ci$datum, "%Y-%m-%d")
 df_ci$ci_lower <- as.numeric(df_ci$ci_lower)
 df_ci$ci_higher <- as.numeric(df_ci$ci_higher)
-
-df_ci$rolling_lower <- as.numeric(df_ci$rolling_lower)
-df_ci$rolling_higher <- as.numeric(df_ci$rolling_higher)
 
 ci_party <- unique(df_ci$partei)
 se_party <- unique(df_se$partei)
@@ -38,7 +35,7 @@ get_label_value <- function (partei){
 
 # Diagramm zusammen bauen
 basechart <- ggplot() +
-  geom_ribbon(data = df_ci, aes( x= datum, ymin = rolling_lower, ymax = rolling_higher, fill=partei, group=partei), alpha = .6) +
+  geom_ribbon(data = df_ci, aes( x= datum, ymin = ci_lower, ymax = ci_higher, fill=partei, group=partei), alpha = .6) +
   geom_line(data = df_se,aes(x = datum, y = rolling_average, color = partei), size = 1, linetype = 3) +
   geom_dl(data = df_se,aes(x = datum, y = rolling_average, label = as.character(get_label_value(partei))), color = farben[df_se$partei], method = list(dl.trans(x = x + .2, cex = 1.5, fontfamily="SZoSansCond-Light"),"calc.boxes", "last.bumpup"))
 basechart <- basechart + 
