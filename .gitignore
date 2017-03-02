@@ -11,11 +11,9 @@ Thumbs.db
 node_modules/
 bower_components/
 npm-debug.log
-
 .cache/
 .sass-cache/
 .vagrant/
-
 .idea/
 /.project
 atlassian-ide-plugin.xml
@@ -25,13 +23,11 @@ atlassian-ide-plugin.xml
 *.Rproj
 .RData
 .RHistory
-
 doc-build/
 /build/
 /dist/
 /channels/
 manifest.json
-
 /test/visual/**/diff.png
 *-test-results.xml
 /xunit.xml
@@ -46,3 +42,4 @@ debug.html
 charts-data-check.R
 data/assets/altes-ribbon.png
 data/assets/neues-ribbon.png
+packrat/lib*/

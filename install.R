@@ -1,1 +1,5 @@
-install.packages(c("purrr", "selectr", "rvest", "XML", "dplyr", "magrittr", "zoo", "grid", "directlabels"))
+install.packages(c("packrat"))
+library(packrat)
+packrat::init()
+# install.packages(c("ggplot2", "purrr", "selectr", "xml2", "dplyr", "magrittr", "zoo", "directlabels"))
+packrat::snapshot()
