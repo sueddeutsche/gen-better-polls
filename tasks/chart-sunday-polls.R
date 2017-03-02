@@ -13,8 +13,9 @@ sunday_data <- mutate(sunday_data, y = as.numeric(order(sunday_data$rolling_aver
 
 do_basic_table_chart <- function(){
   sundaychart <-  ggplot(data = sunday_data, aes(x = rolling_average, y = -y, xmin = ci_lower, xmax = ci_higher , ymax = -y + 0.3, ymin = -y -0.3, color = partei)) +
+    geom_rect(aes(xmin = 0, xmax= ci_lower, fill = partei, color = NA)) +
     geom_rect(aes(fill = partei, color = NA)) + scale_fill_manual(values = farben_ci) +
-    geom_point(aes(size = 2))+
+    geom_point(aes(size = 1))+
     scale_colour_manual(values = farben) +
     coord_cartesian(xlim = c(0, 0.5) ) +
     sztheme_points +
