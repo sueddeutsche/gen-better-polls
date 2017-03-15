@@ -3,6 +3,7 @@ df_ld <- read.csv("data/data-rolling-average.csv", stringsAsFactors = F, sep = "
 df_ci <- read.csv("data/data-ci-values.csv", stringsAsFactors = F, sep=",", encoding ="utf-8")
 
 sunday_data <- df_ld %>% arrange(desc(datum)) %>% filter(datum == datum[1])
+sunday_data
 sunday_data_ci <- df_ci %>% arrange(desc(datum)) %>% filter(datum == datum[1])
 sunday_data_ci <- select(sunday_data_ci, ci_lower, ci_higher)
 sunday_data <- cbind(sunday_data, sunday_data_ci)
