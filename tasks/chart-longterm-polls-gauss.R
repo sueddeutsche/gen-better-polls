@@ -1,4 +1,4 @@
-df_rolling_average_and_gauss <- read.csv("data/data-rolling-average.csv", stringsAsFactors = F, sep=",", encoding ="utf-8")
+df_rolling_average_and_gauss <- read.csv("data/data_alles_rollt.csv", stringsAsFactors = F, sep=",", encoding ="utf-8")
 
 # set formats
 df_rolling_average_and_gauss$datum <- as.Date(df_rolling_average_and_gauss$datum, "%Y-%m-%d")
@@ -29,7 +29,7 @@ basechart <- df_rolling_average_and_gauss %>%
 
 
 #basechart <- basechart + 
-p <- basechart + 
+basechart <- basechart + 
   # add SZ colors
   scale_colour_manual(values = farben[plabels], labels = NULL, breaks = NULL) +
   # does what?
@@ -50,4 +50,6 @@ mobile_chart$layout$clip[mobile_chart$layout$name == "panel"] <- "off"
 ggsave(file="data/assets/longterm-poll-article.png", plot=article_chart, dpi = 144, units = "in", width = 8.89, height = 5)
 # ggsave(file="data/assets/longterm-poll-hp.png", plot=article_chart, dpi = 144, units = "in", width = 7.78, height = 4.38)
 ggsave(file="data/assets/longterm-poll-mobile.png", plot=mobile_chart, dpi = 144, units = "in", width = 4.45, height = 3.33)
+
+article_chart
 
