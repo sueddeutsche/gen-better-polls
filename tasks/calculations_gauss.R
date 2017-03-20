@@ -6,7 +6,7 @@
 
 # read raw data 
 df_raw_data <- read.csv("data/data-input-longform.csv", stringsAsFactors = FALSE)
-df_l <- read.csv("data/data-input-longform.csv", stringsAsFactors = FALSE) # old version
+
 
 df_raw_data <- df_raw_data %>% 
   filter(partei %in% c("CDU/CSU", "SPD", "Grüne", "Linke", "AfD", "FDP"), !is.na(anteil))
