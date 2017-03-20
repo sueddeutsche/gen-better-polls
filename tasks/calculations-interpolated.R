@@ -67,19 +67,3 @@ names(df_datum) <- c("datum")
 df_ci_interpolated <- get_all_parties()
 
 write.csv(df_ci_interpolated, file="data/data-ci-values.csv", row.names = F, quote = F)
-
-
-# calculate standard error and the confidence intervall
-# df_se <- df_l %>%
-#   arrange(datum) %>%
-#   group_by(partei) %>%
-#   mutate(
-#     se = sqrt(anteil * (1-anteil) / befragte),
-#     ci_lower = anteil - 1.96 * se,
-#     ci_higher = anteil + 1.96 * se,
-#     'rolling_average' = rollapply(anteil, 10, mean, align="right", na.pad = TRUE, na.rm = TRUE)) %>%
-#   arrange(desc(datum))
-# 
-# df_se[,c("se","ci_lower", "ci_higher","rolling_average")] <- round(df_se[,c("se","ci_lower", "ci_higher","rolling_average")],5)
-# 
-# write.csv(df_se, file="data/data-transformed.csv", row.names = F, quote = F)
