@@ -50,7 +50,7 @@ error_gauss <- function(x){
   for (i in 1:l){
     qs <- qs + x[i]*x[i]  
   }
-  gaussfehler <- sqrt(1/l) * sqrt(qs)
+  gaussfehler <- 1/l * sqrt(qs)
   gaussfehler
 }
 
