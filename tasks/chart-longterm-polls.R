@@ -16,7 +16,8 @@ df_rolling_average_and_error <- filter(df_rolling_average_and_error, datum > sta
 # andere Namen für die Linien als das Standardlabel
 get_label_value <- function (partei){
   index = match(partei, latest_values$partei)
-  label = paste0("~",round(latest_values$rolling_average[index]*100, digits = 0),"%")
+  label = paste0(round(latest_values$ci_lower[index]*100, digits = 0), "-", round(latest_values$ci_higher[index]*100, digits = 0), "%")
+  # label = paste0("~",round(latest_values$rolling_average[index]*100, digits = 0),"%")
   label = as.character(label)
 }
 
@@ -24,7 +25,7 @@ get_label_value <- function (partei){
 basechart <- ggplot() +
   geom_ribbon(data = df_rolling_average_and_error, aes( x= datum, ymin = ci_lower, ymax = ci_higher, fill = partei, group = partei, color = partei), alpha = .6, size = .1) +
   geom_line(data = df_rolling_average_and_error,aes(x = datum, y = rolling_average, color = partei), size = .2) +
-  geom_dl(data = df_rolling_average_and_error,aes(x = datum, y = rolling_average, label = as.character(get_label_value(partei))), color = farben[df_rolling_average_and_error$partei], method = list(dl.trans(x = x + .2, cex = 1.5, fontfamily="SZoSansCond-Light"),"calc.boxes", "last.bumpup"))
+  geom_dl(data = df_rolling_average_and_error,aes(x = datum, y = rolling_average, label = as.character(get_label_value(partei))), color = farben[df_rolling_average_and_error$partei], method = list(dl.trans(x = x + .1, cex = 1.5, fontfamily="SZoSansCond-Light"),"calc.boxes", "last.bumpup"))
 basechart <- basechart + 
   scale_colour_manual(values = farben[plabels], labels = NULL, breaks = NULL) +
   scale_fill_manual(values = farben_ci[plabels], labels = plabels) + guides(fill = guide_legend(override.aes = list(alpha = 1, fill = farben), nrow = 1)) +
