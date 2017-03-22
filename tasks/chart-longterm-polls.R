@@ -10,7 +10,7 @@ df_rolling_average_and_error_party <- unique(df_rolling_average_and_error$partei
 
 
 latest_values <- arrange(df_rolling_average_and_error, desc(datum)) %>% filter(datum == datum[1])
-startDatum <- "2015-01-01"
+startDatum <- "2015-06-01"
 df_rolling_average_and_error <- filter(df_rolling_average_and_error, datum > startDatum)
 
 # andere Namen für die Linien als das Standardlabel
@@ -29,7 +29,7 @@ basechart <- ggplot() +
 basechart <- basechart + 
   scale_colour_manual(values = farben[plabels], labels = NULL, breaks = NULL) +
   scale_fill_manual(values = farben_ci[plabels], labels = plabels) + guides(fill = guide_legend(override.aes = list(alpha = 1, fill = farben), nrow = 1)) +
-  scale_y_continuous(labels = scales::percent)
+  scale_y_continuous(labels = scales::percent, limits = c(0, NA))
 
 article_chart <- basechart + sztheme_lines +
   scale_x_date(date_labels = "%B %y", limits = as.Date(c(startDatum, NA)), expand = c(0, 0))
