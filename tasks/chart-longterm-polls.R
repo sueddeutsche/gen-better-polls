@@ -17,7 +17,6 @@ df_rolling_average_and_error <- filter(df_rolling_average_and_error, datum > sta
 get_label_value <- function (partei){
   index = match(partei, latest_values$partei)
   label = paste0(round(latest_values$ci_lower[index]*100, digits = 0), "-", round(latest_values$ci_higher[index]*100, digits = 0), "%")
-  # label = paste0("~",round(latest_values$rolling_average[index]*100, digits = 0),"%")
   label = as.character(label)
 }
 
@@ -34,7 +33,7 @@ basechart <- basechart +
 article_chart <- basechart + sztheme_lines +
   scale_x_date(date_labels = "%B %y", limits = as.Date(c(startDatum, NA)), expand = c(0, 0))
 mobile_chart <- basechart + sztheme_lines + sztheme_lines_mobile  +
-  scale_x_date(date_labels = "%m.%y", limits = as.Date(c(startDatum, NA)), expand = c(0, 0))
+  scale_x_date(date_labels = "%m/%y", limits = as.Date(c(startDatum, NA)), expand = c(0, 0))
   
 article_chart <- ggplotGrob(article_chart)
 article_chart$layout$clip[article_chart$layout$name == "panel"] <- "off"
