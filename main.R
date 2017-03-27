@@ -28,7 +28,7 @@ source("tasks/calculations-gauss-error.R")
 #source("tasks/chart-sunday-polls-interpolated.R")
 
 ### 5) rolling average of latest poll by each institute, weighted by number of interviews, linear propagation of uncertainty
-# source("tasks/calculations-latest_polls_weights.R")
+source("tasks/calculations-latest_polls_weights.R")
 
 
 ### generate two charts
