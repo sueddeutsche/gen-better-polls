@@ -76,3 +76,25 @@ sztheme_lines_mobile <- theme(
   legend.margin = margin(0, 0, 0, 0.2, "in"), 
   legend.text = element_text(family = "SZoSans-Light", size = 14, colour = "#666666")
 )
+
+sztheme_teaser <- theme(
+  strip.background = element_blank(),
+  strip.text.y = element_blank(),
+  strip.text.x = element_blank(),
+  axis.text = element_blank(),
+  axis.line.y = element_blank(),
+  axis.ticks = element_blank(),
+  # axis.ticks.length = unit(0,"lines"),
+  axis.title.x = element_blank(),
+  axis.title.y = element_blank(),
+  panel.background = element_blank(),
+  panel.border = element_blank(),
+  panel.grid.major.y = element_line(colour = "#eeeeee", size = 0.3),
+  # panel.grid.minor.y = element_line(colour = "#eeeeee", size = 0.2),
+  panel.grid.major.x =  element_blank(),
+  # panel.grid.minor.x = element_line(colour = "#eeeeee", size = 0.2),
+  panel.spacing = unit(c(0,0,0,0), "lines"),
+  plot.background = element_blank(),
+  plot.margin = unit(c(0, -0.5, 0, -1), "in"),
+  legend.position = "none"
+)
