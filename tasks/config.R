@@ -17,7 +17,8 @@ library(grid)
 options(scipen = 999)
 farben = c("AfD" = "#009dd1","CDU/CSU" = "#222222", "FDP" = "#ffb700", "Grüne" = "#349f29", "Linke" = "#cc35a0", "SPD" = "#ce1b1b")
 farben_ci = c("SPD" = "#eba4a4","AfD" = "#99d8ed","Grüne" = "#aed9a9", "CDU/CSU" = "#bbbbbb", "Linke" = "#ebaed9", "FDP" = "#ffe299")
-plabels = c("SPD" = "SPD", "AfD" = "AfD","Grüne" = "Grüne", "CDU/CSU" = "CDU/CSU", "Linke" = "Linke", "FDP" = "FDP")
+plabels = c("SPD" = "SPD ", "AfD" = "AfD ","Grüne" = "Grüne ", "CDU/CSU" = "CDU/CSU ", "Linke" = "Linke ", "FDP" = "FDP ")
+mlabels = c("SPD" = "SPD", "AfD" = "AfD","Grüne" = "Grüne", "CDU/CSU" = "CDU/CSU", "Linke" = "Linke", "FDP" = "FDP")
 
 sztheme_points <- theme(
   strip.background = element_blank(),
@@ -44,7 +45,7 @@ sztheme_lines <- theme(
   strip.text.y = element_blank(),
   strip.text.x = element_blank(),
   axis.text = element_text(family = "SZoSansCond-Light", size = 18),
-  axis.text.x = element_text(margin=margin(0.1,0,0,0,"in")),
+  axis.text.x = element_text(margin = margin(0.1,0,0,0,"in")),
   axis.line.y = element_blank(),
   axis.ticks = element_blank(),
   axis.ticks.length = unit(0,"lines"),
@@ -62,7 +63,7 @@ sztheme_lines <- theme(
   legend.title = element_blank(),
   legend.position = "top",
   legend.direction = "vertical",
-  # legend.key = element_rect(size = 5, color = 'red'),
+  legend.key = element_blank(),
   legend.key.size = unit(0.15, "in"),
   legend.text = element_text(family = "SZoSans-Light", size = 16, colour = "#666666"),
   text = element_text(size = 18, family = "SZoSansCond-Light", colour = "#666666")
@@ -70,7 +71,7 @@ sztheme_lines <- theme(
 
 sztheme_lines_mobile <- theme(
   # plot.margin = unit(c(0,0,0,0), "lines"),
-  legend.margin = margin(0, 0, 0, 0.2, "in"), 
+  legend.margin = margin(0, 0, 0, 0.3, "in"), 
   legend.text = element_text(family = "SZoSans-Light", size = 14, colour = "#666666")
 )
 
@@ -87,7 +88,9 @@ sztheme_teaser <- theme(
   panel.background = element_blank(),
   panel.border = element_blank(),
   panel.grid.major.y = element_line(colour = "#eeeeee", size = 0.3),
+  # panel.grid.minor.y = element_line(colour = "#eeeeee", size = 0.2),
   panel.grid.major.x =  element_blank(),
+  # panel.grid.minor.x = element_line(colour = "#eeeeee", size = 0.2),
   panel.spacing = unit(c(0,0,0,0), "lines"),
   plot.background = element_blank(),
   plot.margin = unit(c(0, -0.5, 0, -1), "in"),

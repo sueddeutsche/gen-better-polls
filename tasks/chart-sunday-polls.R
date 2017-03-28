@@ -10,7 +10,7 @@ sunday_data$ci_lower <- round(sunday_data$ci_lower, digits = 2)
 sunday_data <- sunday_data[order(sunday_data$rolling_average),]
 sunday_data <- mutate(sunday_data, y = as.numeric(order(sunday_data$rolling_average, decreasing = T )))
 
-sunday_data
+# sunday_data
 
 do_basic_table_chart <- function(){
   sundaychart <-  ggplot(data = sunday_data, aes(x = rolling_average, y = -y, xmin = (ci_lower), xmax = (ci_higher) , ymax = -y + 0.3, ymin = -y -0.3, color = partei)) +
@@ -22,7 +22,7 @@ do_basic_table_chart <- function(){
     scale_y_continuous(breaks = - sunday_data$y, labels = sunday_data$partei) +
     scale_x_continuous(labels = scales::percent, position = "top")
   
-  article_chart <- sundaychart + 
+  article_chart <- sundaychart +
     geom_label(aes(x = ci_higher,label = paste0(round(sunday_data$ci_lower*100, digits = 0), "-", round(sunday_data$ci_higher*100, digits = 0), "%")), fill = NA, label.size = 0, hjust = - 0.2, family="SZoSansCond-Light", size = 6.35)
   mobile_chart <- sundaychart + 
     geom_label(aes(x = ci_higher,label = paste0(round(sunday_data$ci_lower*100, digits = 0), "-", round(sunday_data$ci_higher*100, digits = 0), "%")), fill = NA, label.size = 0, hjust = - 0.1, family="SZoSansCond-Light", size = 6.35)
