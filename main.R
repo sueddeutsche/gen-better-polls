@@ -10,7 +10,8 @@ source("tasks/scrape-wahlrechtde-umfragen.R")
 # 1) basic confidence intervalls: rolling average over 10, confidence error from individual poll
 # 2) gaussian version of propagation of uncertainty
 # 3) linear version of propagation of uncertainty
-# 4)
+# 4) interpolated
+# 5) rolling average of latest poll by each institute, linear propagation of uncertainty
 
 
 ### 1) basic confidence intervalls
@@ -25,6 +26,9 @@ source("tasks/calculations-gauss-error.R")
 #source("tasks/calculations-interpolated.R")
 #source("tasks/chart-longterm-polls-interpolated.R")
 #source("tasks/chart-sunday-polls-interpolated.R")
+
+### 5) rolling average of latest poll by each institute, weighted by number of interviews, linear propagation of uncertainty
+source("tasks/calculations-latest_polls_weights.R")
 
 
 ### generate two charts
