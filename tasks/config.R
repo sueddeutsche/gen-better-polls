@@ -17,7 +17,8 @@ library(grid)
 options(scipen = 999)
 farben = c("AfD" = "#009dd1","CDU/CSU" = "#222222", "FDP" = "#ffb700", "Grüne" = "#349f29", "Linke" = "#cc35a0", "SPD" = "#ce1b1b")
 farben_ci = c("SPD" = "#eba4a4","AfD" = "#99d8ed","Grüne" = "#aed9a9", "CDU/CSU" = "#bbbbbb", "Linke" = "#ebaed9", "FDP" = "#ffe299")
-plabels = c("SPD" = "SPD", "AfD" = "AfD","Grüne" = "Grüne", "CDU/CSU" = "CDU/CSU", "Linke" = "Linke", "FDP" = "FDP")
+plabels = c("SPD" = "SPD  ", "AfD" = "AfD  ","Grüne" = "Grüne  ", "CDU/CSU" = "CDU/CSU  ", "Linke" = "Linke  ", "FDP" = "FDP  ")
+mlabels = c("SPD" = "SPD", "AfD" = "AfD","Grüne" = "Grüne", "CDU/CSU" = "CDU/CSU", "Linke" = "Linke", "FDP" = "FDP")
 
 sztheme_points <- theme(
   strip.background = element_blank(),
@@ -70,7 +71,7 @@ sztheme_lines <- theme(
 
 sztheme_lines_mobile <- theme(
   # plot.margin = unit(c(0,0,0,0), "lines"),
-  legend.margin = margin(0, 0, 0, 0.2, "in"), 
+  legend.margin = margin(0, 0, 0, 0.3, "in"), 
   legend.text = element_text(family = "SZoSans-Light", size = 14, colour = "#666666")
 )
 

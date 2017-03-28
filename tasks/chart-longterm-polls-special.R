@@ -29,8 +29,8 @@ do_special_party <- function(party){
     geom_dl(data = df_rolling_average_and_error,aes(x = datum, y = rolling_average, label = as.character(get_label_value(partei))), color = farben[df_rolling_average_and_error$partei], method = list(dl.trans(x = x + .1, cex = 1.5, fontfamily="SZoSansCond-Light"),"calc.boxes", "last.bumpup")) +
     geom_ribbon(data = special_party, aes( x= datum, ymin = ci_lower, ymax = ci_higher, fill = partei, color = partei), alpha = .7, size = .1) 
   basechart <- basechart + 
-    scale_colour_manual(values = farben[plabels], labels = NULL, breaks = NULL) +
-    scale_fill_manual(values = farben_ci[plabels], labels = plabels) + guides(fill = guide_legend(override.aes = list(alpha = 1, fill = farben), nrow = 1)) +
+    scale_colour_manual(values = farben[mlabels], labels = NULL, breaks = NULL) +
+    scale_fill_manual(values = farben_ci[mlabels], labels = plabels) + guides(fill = guide_legend(override.aes = list(alpha = 1, fill = farben), nrow = 1)) +
     scale_y_continuous(labels = scales::percent, limits = c(0, NA))
   
   article_chart <- basechart + sztheme_lines +
