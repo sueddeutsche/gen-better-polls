@@ -67,19 +67,17 @@ Upper limit: ci_upper = p + delta
 
 Out of that data, we produce two different graphics. One shows the current political mood, using only the latest poll from every institute. The other one shows the development over a longer time, calculating for every day the average of the latest polls available on that day.
 
+**Wen würden Sie wählen, wenn am Sonntag Bundestagswahl wäre?**
 
+Umfrageergebnisse liefern keine exakten Werte, sondern geben eine Spanne  an, innerhalb der die Ergebnisse für eine Partei wahrscheinlich liegen. Die Institute setzen verschiedene Methoden ein, die zu unterschiedlichen Ergebnissen führen. Die Linie  zeigt den gewichteten Mittelwert der jeweils neuesten Umfrage von sieben Instituten.
 
-<img src="https://raw.githubusercontent.com/sueddeutsche/gen-better-polls/master/data/assets/longterm-poll-article.png" width="640" />
+<img src="http://gfx.sueddeutsche.de/politik/2017-04_btw-longterm/longterm-poll-article.png" width="640" />
 
-## Letzte durchschnittliche Umfrage
+**Wen würden Sie wählen, wenn am Sonntag Bundestagswahl wäre?**
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duo Reges: constructio interrete. Aliter enim explicari, quod quaeritur, non potest. In quibus doctissimi illi veteres inesse quiddam caeleste et divinum putaverunt. Expressa vero in iis aetatibus, quae iam confirmatae sunt. Age sane, inquam.
+Umfrageergebnisse liefern keine exakten Werte, sondern geben eine Spanne  an, innerhalb der die Ergebnisse für eine Partei wahrscheinlich liegen. Die Institute setzen verschiedene Methoden ein, die zu unterschiedlichen Ergebnissen führen. Die Balken zeigen den gewichteten Mittelwert der jeweils neuesten Umfrage von sieben Instituten.
 
-<img src="https://raw.githubusercontent.com/sueddeutsche/gen-better-polls/master/data/assets/sunday-polls-article.png" width="640" />
-
-<img src="https://raw.githubusercontent.com/sueddeutsche/gen-better-polls/master/data/assets/sunday-polls-mobile.png" width="320" />
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duo Reges: constructio interrete. Aliter enim explicari, quod quaeritur, non potest. In quibus doctissimi illi veteres inesse quiddam caeleste et divinum putaverunt. Expressa vero in iis aetatibus, quae iam confirmatae sunt. Age sane, inquam.
+<img src="http://gfx.sueddeutsche.de/politik/2017-04_btw-sunday/sunday-polls-article.png" width="640" />
 
 
 _Quelle: http://www.wahlrecht.de_
@@ -94,8 +92,7 @@ _Quelle: http://www.wahlrecht.de_
 ### Usage
 
 **Requirements** NodeJS 4+, R 3.3+
-**Installation** Ensure you have nodeJs and R installed. Then run `Rscript install.R` in the project folder to install 
-the requried packages.
+**Installation** Ensure you have nodeJs and R installed. Then run `Rscript install.R` in the project folder to install the requried packages.
 
 > This project consists of a set of small scripts that may be used independently of each other. @see [tasks directory](./tasks)
 
@@ -112,22 +109,21 @@ These tasks are also mapped in the `package.json` and may be started using `npm 
 #### Task: scraper
 
 To scrape the poll data from www.wahlrecht.de, run `Rscript tasks/scrape-wahlrechtde-umfragen.R`. This will create
-a table at `data/data-input.csv`.
+a table at `data/data-input-longform.csv`.
 
 
 #### Task: calculations
 
-`Rscript tasks/scrape-wahlrechtde-umfragen.R` transforms table data in `data/data-input.csv` and
-`data/data-latest-average.csv` by our statistical method and stores the following results
+`Rscript tasks/calculations-latest_polls_weights.R` transforms table data in `data/data-input-longform.csv` by our statistical method and stores the following results
 
-- `data/data-transformed.csv` timebased chart
-- `data/data-latest-average.csv` current result
+- `data/data-rolling-average-and-error.csv` timebased chart
 
 
 #### Task: plot
 
-In order to visualize the data in `data/data-transformed.csv` and `data/data-latest-average.csv`, run the script
-`Rscript tasks/charts.R`. This will create above images and store them in `data/assets/`.
+In order to visualize the data in `data/data-rolling-average-and-error.csv`, run the scripts
+'Rscripts tasks/chart-longterm-polls.R'")' and 'Rscript tasks/chart-sunday-polls.R'.
+This will create above images and store them in `data/assets/`.
 
 
 ### FAQ
