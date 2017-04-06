@@ -33,7 +33,7 @@ basechart <- basechart +
 article_chart <- basechart + sztheme_lines +
   scale_x_date(date_labels = "%B %y", limits = as.Date(c(startDatum, NA)), expand = c(0, 0))
 mobile_chart <- basechart + sztheme_lines + sztheme_lines_mobile  +
-  scale_x_date(date_labels = "%m.%y", limits = as.Date(c(startDatum, NA)), expand = c(0, 0))
+  scale_x_date(date_labels = "%m/%y", limits = as.Date(c(startDatum, NA)), expand = c(0, 0))
 teaser_chart <- basechart + sztheme_teaser
 
 article_chart <- ggplotGrob(article_chart)
