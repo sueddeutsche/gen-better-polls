@@ -1,6 +1,7 @@
 df_rolling_average_and_error <- read.csv("data/data-rolling-average-and-error.csv", stringsAsFactors = F, sep=",", encoding ="utf-8")
 
 sunday_data <- df_rolling_average_and_error %>% arrange(desc(datum)) %>% filter(datum == datum[1]) %>% select(datum, partei, rolling_average, ci_higher, ci_lower)
+sunday_data <- unique(sunday_data)
 # Werte für higher und lower runden, damit gezeichnete Fläche den Labels entspricht,
 # Werte für rolling_avarage werden nicht gerunden, weil er sonst zu weit aus der Mitte des Intervalls rutscht und außerdem kein Label bekommt
 sunday_data$ci_higher <- round(sunday_data$ci_higher, digits = 2)
