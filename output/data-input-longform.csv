@@ -1,4 +1,5 @@
 institut,datum,befragte,zeitraum,typ,partei,anteil
+allensbach,2017-04-25,1407,01.04.–13.04.,keineangabe,CDU/CSU,0.36
 allensbach,2017-03-28,1397,06.03.–19.03.,keineangabe,CDU/CSU,0.34
 allensbach,2017-02-22,1542,01.02.–15.02.,keineangabe,CDU/CSU,0.33
 allensbach,2017-01-26,1441,05.01.–19.01.,keineangabe,CDU/CSU,0.36
@@ -209,6 +210,7 @@ emnid,2013-10-20,2334,10.10.–16.10.,keineangabe,CDU/CSU,0.42
 emnid,2013-10-13,1833,04.10.–09.10.,keineangabe,CDU/CSU,0.42
 emnid,2013-10-06,1849,26.09.–01.10.,keineangabe,CDU/CSU,0.42
 emnid,2013-09-29,1382,24.09.–26.09.,keineangabe,CDU/CSU,0.43
+forsa,2017-04-26,2002,18.04.–21.04.,keineangabe,CDU/CSU,0.36
 forsa,2017-04-19,2007,10.04.–13.04.,keineangabe,CDU/CSU,0.36
 forsa,2017-04-11,2502,03.04.–07.04.,keineangabe,CDU/CSU,0.36
 forsa,2017-04-04,2504,27.03.–31.03.,keineangabe,CDU/CSU,0.36
@@ -890,6 +892,7 @@ insa,2012-04-16,2100,30.03.–02.04.,online,CDU/CSU,0.36
 insa,2012-04-11,2085,23.03.–26.03.,online,CDU/CSU,0.35
 insa,2012-04-03,2099,21.04.–24.04.,online,CDU/CSU,0.36
 insa,2009-09-27,2041,07.04.–10.04.,online,CDU/CSU,0.338
+allensbach,2017-04-25,1407,01.04.–13.04.,keineangabe,SPD,0.31
 allensbach,2017-03-28,1397,06.03.–19.03.,keineangabe,SPD,0.33
 allensbach,2017-02-22,1542,01.02.–15.02.,keineangabe,SPD,0.305
 allensbach,2017-01-26,1441,05.01.–19.01.,keineangabe,SPD,0.23
@@ -1100,6 +1103,7 @@ emnid,2013-10-20,2334,10.10.–16.10.,keineangabe,SPD,0.25
 emnid,2013-10-13,1833,04.10.–09.10.,keineangabe,SPD,0.25
 emnid,2013-10-06,1849,26.09.–01.10.,keineangabe,SPD,0.25
 emnid,2013-09-29,1382,24.09.–26.09.,keineangabe,SPD,0.26
+forsa,2017-04-26,2002,18.04.–21.04.,keineangabe,SPD,0.3
 forsa,2017-04-19,2007,10.04.–13.04.,keineangabe,SPD,0.3
 forsa,2017-04-11,2502,03.04.–07.04.,keineangabe,SPD,0.3
 forsa,2017-04-04,2504,27.03.–31.03.,keineangabe,SPD,0.29
@@ -1781,6 +1785,7 @@ insa,2012-04-16,2100,30.03.–02.04.,online,SPD,0.27
 insa,2012-04-11,2085,23.03.–26.03.,online,SPD,0.28
 insa,2012-04-03,2099,21.04.–24.04.,online,SPD,0.29
 insa,2009-09-27,2041,07.04.–10.04.,online,SPD,0.23
+allensbach,2017-04-25,1407,01.04.–13.04.,keineangabe,Grüne,0.07
 allensbach,2017-03-28,1397,06.03.–19.03.,keineangabe,Grüne,0.075
 allensbach,2017-02-22,1542,01.02.–15.02.,keineangabe,Grüne,0.08
 allensbach,2017-01-26,1441,05.01.–19.01.,keineangabe,Grüne,0.09
@@ -1991,6 +1996,7 @@ emnid,2013-10-20,2334,10.10.–16.10.,keineangabe,Grüne,0.09
 emnid,2013-10-13,1833,04.10.–09.10.,keineangabe,Grüne,0.09
 emnid,2013-10-06,1849,26.09.–01.10.,keineangabe,Grüne,0.08
 emnid,2013-09-29,1382,24.09.–26.09.,keineangabe,Grüne,0.07
+forsa,2017-04-26,2002,18.04.–21.04.,keineangabe,Grüne,0.07
 forsa,2017-04-19,2007,10.04.–13.04.,keineangabe,Grüne,0.06
 forsa,2017-04-11,2502,03.04.–07.04.,keineangabe,Grüne,0.07
 forsa,2017-04-04,2504,27.03.–31.03.,keineangabe,Grüne,0.07
@@ -2672,6 +2678,7 @@ insa,2012-04-16,2100,30.03.–02.04.,online,Grüne,0.13
 insa,2012-04-11,2085,23.03.–26.03.,online,Grüne,0.14
 insa,2012-04-03,2099,21.04.–24.04.,online,Grüne,0.15
 insa,2009-09-27,2041,07.04.–10.04.,online,Grüne,0.065
+allensbach,2017-04-25,1407,01.04.–13.04.,keineangabe,FDP,0.06
 allensbach,2017-03-28,1397,06.03.–19.03.,keineangabe,FDP,0.065
 allensbach,2017-02-22,1542,01.02.–15.02.,keineangabe,FDP,0.07
 allensbach,2017-01-26,1441,05.01.–19.01.,keineangabe,FDP,0.07
@@ -2882,6 +2889,7 @@ emnid,2013-10-20,2334,10.10.–16.10.,keineangabe,FDP,0.03
 emnid,2013-10-13,1833,04.10.–09.10.,keineangabe,FDP,0.03
 emnid,2013-10-06,1849,26.09.–01.10.,keineangabe,FDP,0.04
 emnid,2013-09-29,1382,24.09.–26.09.,keineangabe,FDP,0.03
+forsa,2017-04-26,2002,18.04.–21.04.,keineangabe,FDP,0.06
 forsa,2017-04-19,2007,10.04.–13.04.,keineangabe,FDP,0.06
 forsa,2017-04-11,2502,03.04.–07.04.,keineangabe,FDP,0.06
 forsa,2017-04-04,2504,27.03.–31.03.,keineangabe,FDP,0.05
@@ -3563,6 +3571,7 @@ insa,2012-04-16,2100,30.03.–02.04.,online,FDP,0.04
 insa,2012-04-11,2085,23.03.–26.03.,online,FDP,0.04
 insa,2012-04-03,2099,21.04.–24.04.,online,FDP,0.04
 insa,2009-09-27,2041,07.04.–10.04.,online,FDP,0.065
+allensbach,2017-04-25,1407,01.04.–13.04.,keineangabe,Linke,0.09
 allensbach,2017-03-28,1397,06.03.–19.03.,keineangabe,Linke,0.08
 allensbach,2017-02-22,1542,01.02.–15.02.,keineangabe,Linke,0.08
 allensbach,2017-01-26,1441,05.01.–19.01.,keineangabe,Linke,0.095
@@ -3773,6 +3782,7 @@ emnid,2013-10-20,2334,10.10.–16.10.,keineangabe,Linke,0.1
 emnid,2013-10-13,1833,04.10.–09.10.,keineangabe,Linke,0.1
 emnid,2013-10-06,1849,26.09.–01.10.,keineangabe,Linke,0.09
 emnid,2013-09-29,1382,24.09.–26.09.,keineangabe,Linke,0.09
+forsa,2017-04-26,2002,18.04.–21.04.,keineangabe,Linke,0.08
 forsa,2017-04-19,2007,10.04.–13.04.,keineangabe,Linke,0.09
 forsa,2017-04-11,2502,03.04.–07.04.,keineangabe,Linke,0.08
 forsa,2017-04-04,2504,27.03.–31.03.,keineangabe,Linke,0.09
@@ -4454,6 +4464,7 @@ insa,2012-04-16,2100,30.03.–02.04.,online,Linke,0.07
 insa,2012-04-11,2085,23.03.–26.03.,online,Linke,0.06
 insa,2012-04-03,2099,21.04.–24.04.,online,Linke,0.07
 insa,2009-09-27,2041,07.04.–10.04.,online,Linke,0.095
+allensbach,2017-04-25,1407,01.04.–13.04.,keineangabe,AfD,0.07
 allensbach,2017-03-28,1397,06.03.–19.03.,keineangabe,AfD,0.07
 allensbach,2017-02-22,1542,01.02.–15.02.,keineangabe,AfD,0.085
 allensbach,2017-01-26,1441,05.01.–19.01.,keineangabe,AfD,0.115
@@ -4664,6 +4675,7 @@ emnid,2013-10-20,2334,10.10.–16.10.,keineangabe,AfD,0.05
 emnid,2013-10-13,1833,04.10.–09.10.,keineangabe,AfD,0.06
 emnid,2013-10-06,1849,26.09.–01.10.,keineangabe,AfD,0.06
 emnid,2013-09-29,1382,24.09.–26.09.,keineangabe,AfD,0.06
+forsa,2017-04-26,2002,18.04.–21.04.,keineangabe,AfD,0.09
 forsa,2017-04-19,2007,10.04.–13.04.,keineangabe,AfD,0.08
 forsa,2017-04-11,2502,03.04.–07.04.,keineangabe,AfD,0.08
 forsa,2017-04-04,2504,27.03.–31.03.,keineangabe,AfD,0.08
@@ -5345,6 +5357,7 @@ insa,2012-04-16,2100,30.03.–02.04.,online,AfD,NA
 insa,2012-04-11,2085,23.03.–26.03.,online,AfD,NA
 insa,2012-04-03,2099,21.04.–24.04.,online,AfD,NA
 insa,2009-09-27,2041,07.04.–10.04.,online,AfD,0.1
+allensbach,2017-04-25,1407,01.04.–13.04.,keineangabe,sonstige,0.04
 allensbach,2017-03-28,1397,06.03.–19.03.,keineangabe,sonstige,0.04
 allensbach,2017-02-22,1542,01.02.–15.02.,keineangabe,sonstige,0.05
 allensbach,2017-01-26,1441,05.01.–19.01.,keineangabe,sonstige,0.04
@@ -5555,6 +5568,7 @@ emnid,2013-10-20,2334,10.10.–16.10.,keineangabe,sonstige,0.06
 emnid,2013-10-13,1833,04.10.–09.10.,keineangabe,sonstige,0.05
 emnid,2013-10-06,1849,26.09.–01.10.,keineangabe,sonstige,0.06
 emnid,2013-09-29,1382,24.09.–26.09.,keineangabe,sonstige,0.06
+forsa,2017-04-26,2002,18.04.–21.04.,keineangabe,sonstige,0.04
 forsa,2017-04-19,2007,10.04.–13.04.,keineangabe,sonstige,0.05
 forsa,2017-04-11,2502,03.04.–07.04.,keineangabe,sonstige,0.05
 forsa,2017-04-04,2504,27.03.–31.03.,keineangabe,sonstige,0.06
@@ -6236,6 +6250,7 @@ insa,2012-04-16,2100,30.03.–02.04.,online,sonstige,0.04
 insa,2012-04-11,2085,23.03.–26.03.,online,sonstige,0.03
 insa,2012-04-03,2099,21.04.–24.04.,online,sonstige,0.03
 insa,2009-09-27,2041,07.04.–10.04.,online,sonstige,0.035
+allensbach,2017-04-25,1407,01.04.–13.04.,keineangabe,nw_un,NA
 allensbach,2017-03-28,1397,06.03.–19.03.,keineangabe,nw_un,NA
 allensbach,2017-02-22,1542,01.02.–15.02.,keineangabe,nw_un,NA
 allensbach,2017-01-26,1441,05.01.–19.01.,keineangabe,nw_un,NA
@@ -6446,6 +6461,7 @@ emnid,2013-10-20,2334,10.10.–16.10.,keineangabe,nw_un,NA
 emnid,2013-10-13,1833,04.10.–09.10.,keineangabe,nw_un,NA
 emnid,2013-10-06,1849,26.09.–01.10.,keineangabe,nw_un,NA
 emnid,2013-09-29,1382,24.09.–26.09.,keineangabe,nw_un,NA
+forsa,2017-04-26,2002,18.04.–21.04.,keineangabe,nw_un,0.24
 forsa,2017-04-19,2007,10.04.–13.04.,keineangabe,nw_un,0.25
 forsa,2017-04-11,2502,03.04.–07.04.,keineangabe,nw_un,0.23
 forsa,2017-04-04,2504,27.03.–31.03.,keineangabe,nw_un,0.24
@@ -7127,6 +7143,7 @@ insa,2012-04-16,2100,30.03.–02.04.,online,nw_un,NA
 insa,2012-04-11,2085,23.03.–26.03.,online,nw_un,NA
 insa,2012-04-03,2099,21.04.–24.04.,online,nw_un,NA
 insa,2009-09-27,2041,07.04.–10.04.,online,nw_un,NA
+allensbach,2017-04-25,1407,01.04.–13.04.,keineangabe,fw,NA
 allensbach,2017-03-28,1397,06.03.–19.03.,keineangabe,fw,NA
 allensbach,2017-02-22,1542,01.02.–15.02.,keineangabe,fw,NA
 allensbach,2017-01-26,1441,05.01.–19.01.,keineangabe,fw,NA
@@ -7337,6 +7354,7 @@ emnid,2013-10-20,2334,10.10.–16.10.,keineangabe,fw,NA
 emnid,2013-10-13,1833,04.10.–09.10.,keineangabe,fw,NA
 emnid,2013-10-06,1849,26.09.–01.10.,keineangabe,fw,NA
 emnid,2013-09-29,1382,24.09.–26.09.,keineangabe,fw,NA
+forsa,2017-04-26,2002,18.04.–21.04.,keineangabe,fw,NA
 forsa,2017-04-19,2007,10.04.–13.04.,keineangabe,fw,NA
 forsa,2017-04-11,2502,03.04.–07.04.,keineangabe,fw,NA
 forsa,2017-04-04,2504,27.03.–31.03.,keineangabe,fw,NA
