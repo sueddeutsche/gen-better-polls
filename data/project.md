@@ -1,6 +1,12 @@
 # GEN Hackathon - Better Poll Visualization
 
-At the Süddeutsche Zeitung Editor's Lab we were working on a better way to deal with opinion polls. 
+At the Süddeutsche Zeitung Editor's Lab in October 2016 we began working on a better way to deal with opinion polls. 
+
+In April 2017 we published a series of three articles on [SZ.de](http://www.sz.de), which introduce a new way of communicating uncertainty.  
+
+* [Wie wir über Umfragen berichten](http://www.sueddeutsche.de/politik/bundestagswahl-wie-wir-ueber-umfragen-berichten-1.3440233)
+* [So steht es im Bundestagswahlkampf](http://www.sueddeutsche.de/politik/bundestagswahl-so-steht-es-im-bundestagswahlkampf-1.3438676)
+* [Umfragen sind nur ein Schnappschuss der Gegenwart](http://www.sueddeutsche.de/politik/demoskopie-umfragen-sind-nur-ein-schnappschuss-der-gegenwart-1.3436478)
 
 In autumn 2017 the next general election will be held. In the months to come, opinion polls play an even more important component of reporting about German politics. 
 
@@ -8,7 +14,7 @@ Traditionally, media outlets are reporting about in a new poll in the following 
 
 This has two major shortcomings:
 
-## Polling data are blurry
+## Polling data is blurry
 
 As it is the case with a lot of data: We readers are tempted to take them as a fact - solely due the fact of decimal places. But in fact, polls are a insecurity attached that has mainly two sources:
 
@@ -21,7 +27,7 @@ Therefore a smarter way of reporting about opinion polls is to get as many data 
 
 ## Data Source
 
-The most comprehensive overview of German opionion polls can be found on [Wahlrecht.de](http://www.wahlrecht.de), a website about maintained by volunteers. 
+The most comprehensive overview of German opionion polls can be found on [Wahlrecht.de](http://www.wahlrecht.de), a website maintained by volunteers. 
 
 ## Calculation of confidence intervall
 
