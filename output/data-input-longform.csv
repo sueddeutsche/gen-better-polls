@@ -462,6 +462,7 @@ politbarometer,2013-11-29,1270,26.11.–28.11.,keineangabe,CDU/CSU,0.42
 politbarometer,2013-11-08,1288,05.11.–07.11.,keineangabe,CDU/CSU,0.42
 politbarometer,2013-10-18,1183,15.10.–17.10.,keineangabe,CDU/CSU,0.42
 politbarometer,2013-09-27,1293,24.09.–26.09.,keineangabe,CDU/CSU,0.43
+gms,2017-05-04,1004,30.04.–03.05.,telefon,CDU/CSU,0.36
 gms,2017-03-23,1008,16.03.–22.03.,telefon,CDU/CSU,0.34
 gms,2017-02-09,1009,02.02.–08.02.,telefon,CDU/CSU,0.33
 gms,2017-01-05,1006,28.12.–04.01.,telefon,CDU/CSU,0.36
@@ -547,7 +548,7 @@ gms,2010-03-01,1004,13.01.–18.01.,telefon,CDU/CSU,0.35
 gms,2010-01-19,1001,08.12.–11.12.,telefon,CDU/CSU,0.35
 gms,2009-12-14,1002,13.11.–18.11.,telefon,CDU/CSU,0.35
 gms,2009-11-19,1001,19.10.–22.10.,telefon,CDU/CSU,0.35
-gms,2009-10-23,1002,16.03.–22.03.,telefon,CDU/CSU,0.35
+gms,2009-10-23,1002,30.04.–03.05.,telefon,CDU/CSU,0.35
 dimap,2017-04-20,934,18.04.–19.04.,keineangabe,CDU/CSU,0.35
 dimap,2017-04-13,1502,10.04.–12.04.,keineangabe,CDU/CSU,0.34
 dimap,2017-03-23,1023,20.03.–22.03.,keineangabe,CDU/CSU,0.32
@@ -1359,6 +1360,7 @@ politbarometer,2013-11-29,1270,26.11.–28.11.,keineangabe,SPD,0.26
 politbarometer,2013-11-08,1288,05.11.–07.11.,keineangabe,SPD,0.26
 politbarometer,2013-10-18,1183,15.10.–17.10.,keineangabe,SPD,0.26
 politbarometer,2013-09-27,1293,24.09.–26.09.,keineangabe,SPD,0.26
+gms,2017-05-04,1004,30.04.–03.05.,telefon,SPD,0.29
 gms,2017-03-23,1008,16.03.–22.03.,telefon,SPD,0.31
 gms,2017-02-09,1009,02.02.–08.02.,telefon,SPD,0.29
 gms,2017-01-05,1006,28.12.–04.01.,telefon,SPD,0.2
@@ -1444,7 +1446,7 @@ gms,2010-03-01,1004,13.01.–18.01.,telefon,SPD,0.25
 gms,2010-01-19,1001,08.12.–11.12.,telefon,SPD,0.24
 gms,2009-12-14,1002,13.11.–18.11.,telefon,SPD,0.24
 gms,2009-11-19,1001,19.10.–22.10.,telefon,SPD,0.21
-gms,2009-10-23,1002,16.03.–22.03.,telefon,SPD,0.21
+gms,2009-10-23,1002,30.04.–03.05.,telefon,SPD,0.21
 dimap,2017-04-20,934,18.04.–19.04.,keineangabe,SPD,0.3
 dimap,2017-04-13,1502,10.04.–12.04.,keineangabe,SPD,0.31
 dimap,2017-03-23,1023,20.03.–22.03.,keineangabe,SPD,0.32
@@ -2256,6 +2258,7 @@ politbarometer,2013-11-29,1270,26.11.–28.11.,keineangabe,Grüne,0.08
 politbarometer,2013-11-08,1288,05.11.–07.11.,keineangabe,Grüne,0.09
 politbarometer,2013-10-18,1183,15.10.–17.10.,keineangabe,Grüne,0.08
 politbarometer,2013-09-27,1293,24.09.–26.09.,keineangabe,Grüne,0.07
+gms,2017-05-04,1004,30.04.–03.05.,telefon,Grüne,0.07
 gms,2017-03-23,1008,16.03.–22.03.,telefon,Grüne,0.08
 gms,2017-02-09,1009,02.02.–08.02.,telefon,Grüne,0.09
 gms,2017-01-05,1006,28.12.–04.01.,telefon,Grüne,0.1
@@ -2341,7 +2344,7 @@ gms,2010-03-01,1004,13.01.–18.01.,telefon,Grüne,0.15
 gms,2010-01-19,1001,08.12.–11.12.,telefon,Grüne,0.14
 gms,2009-12-14,1002,13.11.–18.11.,telefon,Grüne,0.13
 gms,2009-11-19,1001,19.10.–22.10.,telefon,Grüne,0.12
-gms,2009-10-23,1002,16.03.–22.03.,telefon,Grüne,0.11
+gms,2009-10-23,1002,30.04.–03.05.,telefon,Grüne,0.11
 dimap,2017-04-20,934,18.04.–19.04.,keineangabe,Grüne,0.07
 dimap,2017-04-13,1502,10.04.–12.04.,keineangabe,Grüne,0.08
 dimap,2017-03-23,1023,20.03.–22.03.,keineangabe,Grüne,0.08
@@ -3153,6 +3156,7 @@ politbarometer,2013-11-29,1270,26.11.–28.11.,keineangabe,FDP,0.03
 politbarometer,2013-11-08,1288,05.11.–07.11.,keineangabe,FDP,0.03
 politbarometer,2013-10-18,1183,15.10.–17.10.,keineangabe,FDP,0.03
 politbarometer,2013-09-27,1293,24.09.–26.09.,keineangabe,FDP,0.03
+gms,2017-05-04,1004,30.04.–03.05.,telefon,FDP,0.07
 gms,2017-03-23,1008,16.03.–22.03.,telefon,FDP,0.06
 gms,2017-02-09,1009,02.02.–08.02.,telefon,FDP,0.06
 gms,2017-01-05,1006,28.12.–04.01.,telefon,FDP,0.07
@@ -3238,7 +3242,7 @@ gms,2010-03-01,1004,13.01.–18.01.,telefon,FDP,0.1
 gms,2010-01-19,1001,08.12.–11.12.,telefon,FDP,0.11
 gms,2009-12-14,1002,13.11.–18.11.,telefon,FDP,0.12
 gms,2009-11-19,1001,19.10.–22.10.,telefon,FDP,0.13
-gms,2009-10-23,1002,16.03.–22.03.,telefon,FDP,0.14
+gms,2009-10-23,1002,30.04.–03.05.,telefon,FDP,0.14
 dimap,2017-04-20,934,18.04.–19.04.,keineangabe,FDP,0.06
 dimap,2017-04-13,1502,10.04.–12.04.,keineangabe,FDP,0.06
 dimap,2017-03-23,1023,20.03.–22.03.,keineangabe,FDP,0.06
@@ -4050,6 +4054,7 @@ politbarometer,2013-11-29,1270,26.11.–28.11.,keineangabe,Linke,0.1
 politbarometer,2013-11-08,1288,05.11.–07.11.,keineangabe,Linke,0.09
 politbarometer,2013-10-18,1183,15.10.–17.10.,keineangabe,Linke,0.1
 politbarometer,2013-09-27,1293,24.09.–26.09.,keineangabe,Linke,0.1
+gms,2017-05-04,1004,30.04.–03.05.,telefon,Linke,0.08
 gms,2017-03-23,1008,16.03.–22.03.,telefon,Linke,0.08
 gms,2017-02-09,1009,02.02.–08.02.,telefon,Linke,0.08
 gms,2017-01-05,1006,28.12.–04.01.,telefon,Linke,0.1
@@ -4135,7 +4140,7 @@ gms,2010-03-01,1004,13.01.–18.01.,telefon,Linke,0.09
 gms,2010-01-19,1001,08.12.–11.12.,telefon,Linke,0.11
 gms,2009-12-14,1002,13.11.–18.11.,telefon,Linke,0.11
 gms,2009-11-19,1001,19.10.–22.10.,telefon,Linke,0.13
-gms,2009-10-23,1002,16.03.–22.03.,telefon,Linke,0.14
+gms,2009-10-23,1002,30.04.–03.05.,telefon,Linke,0.14
 dimap,2017-04-20,934,18.04.–19.04.,keineangabe,Linke,0.08
 dimap,2017-04-13,1502,10.04.–12.04.,keineangabe,Linke,0.07
 dimap,2017-03-23,1023,20.03.–22.03.,keineangabe,Linke,0.07
@@ -4947,6 +4952,7 @@ politbarometer,2013-11-29,1270,26.11.–28.11.,keineangabe,AfD,0.05
 politbarometer,2013-11-08,1288,05.11.–07.11.,keineangabe,AfD,0.05
 politbarometer,2013-10-18,1183,15.10.–17.10.,keineangabe,AfD,0.05
 politbarometer,2013-09-27,1293,24.09.–26.09.,keineangabe,AfD,0.05
+gms,2017-05-04,1004,30.04.–03.05.,telefon,AfD,0.09
 gms,2017-03-23,1008,16.03.–22.03.,telefon,AfD,0.09
 gms,2017-02-09,1009,02.02.–08.02.,telefon,AfD,0.11
 gms,2017-01-05,1006,28.12.–04.01.,telefon,AfD,0.13
@@ -5032,7 +5038,7 @@ gms,2010-03-01,1004,13.01.–18.01.,telefon,AfD,NA
 gms,2010-01-19,1001,08.12.–11.12.,telefon,AfD,NA
 gms,2009-12-14,1002,13.11.–18.11.,telefon,AfD,NA
 gms,2009-11-19,1001,19.10.–22.10.,telefon,AfD,NA
-gms,2009-10-23,1002,16.03.–22.03.,telefon,AfD,NA
+gms,2009-10-23,1002,30.04.–03.05.,telefon,AfD,NA
 dimap,2017-04-20,934,18.04.–19.04.,keineangabe,AfD,0.1
 dimap,2017-04-13,1502,10.04.–12.04.,keineangabe,AfD,0.11
 dimap,2017-03-23,1023,20.03.–22.03.,keineangabe,AfD,0.11
@@ -5844,6 +5850,7 @@ politbarometer,2013-11-29,1270,26.11.–28.11.,keineangabe,sonstige,0.06
 politbarometer,2013-11-08,1288,05.11.–07.11.,keineangabe,sonstige,0.06
 politbarometer,2013-10-18,1183,15.10.–17.10.,keineangabe,sonstige,NA
 politbarometer,2013-09-27,1293,24.09.–26.09.,keineangabe,sonstige,0.06
+gms,2017-05-04,1004,30.04.–03.05.,telefon,sonstige,0.04
 gms,2017-03-23,1008,16.03.–22.03.,telefon,sonstige,0.04
 gms,2017-02-09,1009,02.02.–08.02.,telefon,sonstige,0.04
 gms,2017-01-05,1006,28.12.–04.01.,telefon,sonstige,0.04
@@ -5929,7 +5936,7 @@ gms,2010-03-01,1004,13.01.–18.01.,telefon,sonstige,0.06
 gms,2010-01-19,1001,08.12.–11.12.,telefon,sonstige,0.05
 gms,2009-12-14,1002,13.11.–18.11.,telefon,sonstige,0.05
 gms,2009-11-19,1001,19.10.–22.10.,telefon,sonstige,0.06
-gms,2009-10-23,1002,16.03.–22.03.,telefon,sonstige,0.05
+gms,2009-10-23,1002,30.04.–03.05.,telefon,sonstige,0.05
 dimap,2017-04-20,934,18.04.–19.04.,keineangabe,sonstige,0.04
 dimap,2017-04-13,1502,10.04.–12.04.,keineangabe,sonstige,0.03
 dimap,2017-03-23,1023,20.03.–22.03.,keineangabe,sonstige,0.04
@@ -6741,6 +6748,7 @@ politbarometer,2013-11-29,1270,26.11.–28.11.,keineangabe,nw_un,NA
 politbarometer,2013-11-08,1288,05.11.–07.11.,keineangabe,nw_un,NA
 politbarometer,2013-10-18,1183,15.10.–17.10.,keineangabe,nw_un,NA
 politbarometer,2013-09-27,1293,24.09.–26.09.,keineangabe,nw_un,NA
+gms,2017-05-04,1004,30.04.–03.05.,telefon,nw_un,NA
 gms,2017-03-23,1008,16.03.–22.03.,telefon,nw_un,NA
 gms,2017-02-09,1009,02.02.–08.02.,telefon,nw_un,NA
 gms,2017-01-05,1006,28.12.–04.01.,telefon,nw_un,NA
@@ -6826,7 +6834,7 @@ gms,2010-03-01,1004,13.01.–18.01.,telefon,nw_un,NA
 gms,2010-01-19,1001,08.12.–11.12.,telefon,nw_un,NA
 gms,2009-12-14,1002,13.11.–18.11.,telefon,nw_un,NA
 gms,2009-11-19,1001,19.10.–22.10.,telefon,nw_un,NA
-gms,2009-10-23,1002,16.03.–22.03.,telefon,nw_un,NA
+gms,2009-10-23,1002,30.04.–03.05.,telefon,nw_un,NA
 dimap,2017-04-20,934,18.04.–19.04.,keineangabe,nw_un,NA
 dimap,2017-04-13,1502,10.04.–12.04.,keineangabe,nw_un,NA
 dimap,2017-03-23,1023,20.03.–22.03.,keineangabe,nw_un,NA
@@ -7638,6 +7646,7 @@ politbarometer,2013-11-29,1270,26.11.–28.11.,keineangabe,fw,NA
 politbarometer,2013-11-08,1288,05.11.–07.11.,keineangabe,fw,NA
 politbarometer,2013-10-18,1183,15.10.–17.10.,keineangabe,fw,NA
 politbarometer,2013-09-27,1293,24.09.–26.09.,keineangabe,fw,NA
+gms,2017-05-04,1004,30.04.–03.05.,telefon,fw,NA
 gms,2017-03-23,1008,16.03.–22.03.,telefon,fw,NA
 gms,2017-02-09,1009,02.02.–08.02.,telefon,fw,NA
 gms,2017-01-05,1006,28.12.–04.01.,telefon,fw,NA
@@ -7723,7 +7732,7 @@ gms,2010-03-01,1004,13.01.–18.01.,telefon,fw,NA
 gms,2010-01-19,1001,08.12.–11.12.,telefon,fw,NA
 gms,2009-12-14,1002,13.11.–18.11.,telefon,fw,NA
 gms,2009-11-19,1001,19.10.–22.10.,telefon,fw,NA
-gms,2009-10-23,1002,16.03.–22.03.,telefon,fw,NA
+gms,2009-10-23,1002,30.04.–03.05.,telefon,fw,NA
 dimap,2017-04-20,934,18.04.–19.04.,keineangabe,fw,NA
 dimap,2017-04-13,1502,10.04.–12.04.,keineangabe,fw,NA
 dimap,2017-03-23,1023,20.03.–22.03.,keineangabe,fw,NA
