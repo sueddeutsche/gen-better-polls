@@ -32,6 +32,7 @@ allensbach,2015-02-19,1400,01.02.–12.02.,keineangabe,CDU/CSU,0.41
 allensbach,2015-01-28,1455,09.01.–23.01.,keineangabe,CDU/CSU,0.415
 allensbach,2014-12-17,1505,01.12.–12.12.,keineangabe,CDU/CSU,0.405
 allensbach,2014-04-16,1571,28.03.–10.04.,keineangabe,CDU/CSU,0.4
+emnid,2017-08-12,1886,03.08.–09.08.,keineangabe,CDU/CSU,0.38
 emnid,2017-08-05,2453,27.07.–02.08.,keineangabe,CDU/CSU,0.38
 emnid,2017-07-29,1921,20.07.–26.07.,keineangabe,CDU/CSU,0.38
 emnid,2017-07-22,2349,13.07.–19.07.,keineangabe,CDU/CSU,0.38
@@ -228,6 +229,7 @@ emnid,2013-10-20,2334,10.10.–16.10.,keineangabe,CDU/CSU,0.42
 emnid,2013-10-13,1833,04.10.–09.10.,keineangabe,CDU/CSU,0.42
 emnid,2013-10-06,1849,26.09.–01.10.,keineangabe,CDU/CSU,0.42
 emnid,2013-09-29,1382,24.09.–26.09.,keineangabe,CDU/CSU,0.43
+forsa,2017-08-16,2507,07.08.–11.08.,keineangabe,CDU/CSU,0.39
 forsa,2017-08-09,2503,31.07.–04.08.,keineangabe,CDU/CSU,0.4
 forsa,2017-08-02,2501,24.07.–28.07.,keineangabe,CDU/CSU,0.4
 forsa,2017-07-26,2507,17.07.–21.07.,keineangabe,CDU/CSU,0.4
@@ -682,6 +684,7 @@ dimap,2013-11-22,1006,19.11.–20.11.,keineangabe,CDU/CSU,0.42
 dimap,2013-11-07,1520,04.11.–06.11.,keineangabe,CDU/CSU,0.42
 dimap,2013-10-25,1028,21.10.–23.10.,keineangabe,CDU/CSU,0.4
 dimap,2013-10-10,1503,07.10.–09.10.,keineangabe,CDU/CSU,0.42
+insa,2017-08-15,2025,11.08.–14.08.,online,CDU/CSU,0.37
 insa,2017-08-07,2046,04.08.–07.08.,online,CDU/CSU,0.37
 insa,2017-08-01,2046,28.07.–31.07.,online,CDU/CSU,0.37
 insa,2017-07-25,2009,21.07.–24.07.,online,CDU/CSU,0.375
@@ -956,8 +959,8 @@ insa,2012-05-01,2097,13.04.–16.04.,online,CDU/CSU,0.36
 insa,2012-04-23,2075,06.04.–09.04.,online,CDU/CSU,0.35
 insa,2012-04-16,2100,30.03.–02.04.,online,CDU/CSU,0.36
 insa,2012-04-11,2085,23.03.–26.03.,online,CDU/CSU,0.35
-insa,2012-04-03,2099,04.08.–07.08.,online,CDU/CSU,0.36
-insa,2009-09-27,2046,21.07.–24.07.,online,CDU/CSU,0.338
+insa,2012-04-03,2099,11.08.–14.08.,online,CDU/CSU,0.36
+insa,2009-09-27,2025,28.07.–31.07.,online,CDU/CSU,0.338
 allensbach,2017-07-18,1403,01.07.–12.07.,keineangabe,SPD,0.25
 allensbach,2017-06-20,1437,01.06.–15.06.,keineangabe,SPD,0.24
 allensbach,2017-05-26,1457,05.05.–19.05.,keineangabe,SPD,0.26
@@ -991,6 +994,7 @@ allensbach,2015-02-19,1400,01.02.–12.02.,keineangabe,SPD,0.255
 allensbach,2015-01-28,1455,09.01.–23.01.,keineangabe,SPD,0.25
 allensbach,2014-12-17,1505,01.12.–12.12.,keineangabe,SPD,0.26
 allensbach,2014-04-16,1571,28.03.–10.04.,keineangabe,SPD,0.265
+emnid,2017-08-12,1886,03.08.–09.08.,keineangabe,SPD,0.24
 emnid,2017-08-05,2453,27.07.–02.08.,keineangabe,SPD,0.23
 emnid,2017-07-29,1921,20.07.–26.07.,keineangabe,SPD,0.24
 emnid,2017-07-22,2349,13.07.–19.07.,keineangabe,SPD,0.25
@@ -1187,6 +1191,7 @@ emnid,2013-10-20,2334,10.10.–16.10.,keineangabe,SPD,0.25
 emnid,2013-10-13,1833,04.10.–09.10.,keineangabe,SPD,0.25
 emnid,2013-10-06,1849,26.09.–01.10.,keineangabe,SPD,0.25
 emnid,2013-09-29,1382,24.09.–26.09.,keineangabe,SPD,0.26
+forsa,2017-08-16,2507,07.08.–11.08.,keineangabe,SPD,0.23
 forsa,2017-08-09,2503,31.07.–04.08.,keineangabe,SPD,0.23
 forsa,2017-08-02,2501,24.07.–28.07.,keineangabe,SPD,0.22
 forsa,2017-07-26,2507,17.07.–21.07.,keineangabe,SPD,0.22
@@ -1641,6 +1646,7 @@ dimap,2013-11-22,1006,19.11.–20.11.,keineangabe,SPD,0.25
 dimap,2013-11-07,1520,04.11.–06.11.,keineangabe,SPD,0.26
 dimap,2013-10-25,1028,21.10.–23.10.,keineangabe,SPD,0.27
 dimap,2013-10-10,1503,07.10.–09.10.,keineangabe,SPD,0.26
+insa,2017-08-15,2025,11.08.–14.08.,online,SPD,0.25
 insa,2017-08-07,2046,04.08.–07.08.,online,SPD,0.25
 insa,2017-08-01,2046,28.07.–31.07.,online,SPD,0.245
 insa,2017-07-25,2009,21.07.–24.07.,online,SPD,0.25
@@ -1915,8 +1921,8 @@ insa,2012-05-01,2097,13.04.–16.04.,online,SPD,0.27
 insa,2012-04-23,2075,06.04.–09.04.,online,SPD,0.26
 insa,2012-04-16,2100,30.03.–02.04.,online,SPD,0.27
 insa,2012-04-11,2085,23.03.–26.03.,online,SPD,0.28
-insa,2012-04-03,2099,04.08.–07.08.,online,SPD,0.29
-insa,2009-09-27,2046,21.07.–24.07.,online,SPD,0.23
+insa,2012-04-03,2099,11.08.–14.08.,online,SPD,0.29
+insa,2009-09-27,2025,28.07.–31.07.,online,SPD,0.23
 allensbach,2017-07-18,1403,01.07.–12.07.,keineangabe,Grüne,0.07
 allensbach,2017-06-20,1437,01.06.–15.06.,keineangabe,Grüne,0.07
 allensbach,2017-05-26,1457,05.05.–19.05.,keineangabe,Grüne,0.08
@@ -1950,6 +1956,7 @@ allensbach,2015-02-19,1400,01.02.–12.02.,keineangabe,Grüne,0.095
 allensbach,2015-01-28,1455,09.01.–23.01.,keineangabe,Grüne,0.105
 allensbach,2014-12-17,1505,01.12.–12.12.,keineangabe,Grüne,0.095
 allensbach,2014-04-16,1571,28.03.–10.04.,keineangabe,Grüne,0.11
+emnid,2017-08-12,1886,03.08.–09.08.,keineangabe,Grüne,0.07
 emnid,2017-08-05,2453,27.07.–02.08.,keineangabe,Grüne,0.08
 emnid,2017-07-29,1921,20.07.–26.07.,keineangabe,Grüne,0.08
 emnid,2017-07-22,2349,13.07.–19.07.,keineangabe,Grüne,0.08
@@ -2146,6 +2153,7 @@ emnid,2013-10-20,2334,10.10.–16.10.,keineangabe,Grüne,0.09
 emnid,2013-10-13,1833,04.10.–09.10.,keineangabe,Grüne,0.09
 emnid,2013-10-06,1849,26.09.–01.10.,keineangabe,Grüne,0.08
 emnid,2013-09-29,1382,24.09.–26.09.,keineangabe,Grüne,0.07
+forsa,2017-08-16,2507,07.08.–11.08.,keineangabe,Grüne,0.08
 forsa,2017-08-09,2503,31.07.–04.08.,keineangabe,Grüne,0.08
 forsa,2017-08-02,2501,24.07.–28.07.,keineangabe,Grüne,0.08
 forsa,2017-07-26,2507,17.07.–21.07.,keineangabe,Grüne,0.08
@@ -2600,6 +2608,7 @@ dimap,2013-11-22,1006,19.11.–20.11.,keineangabe,Grüne,0.1
 dimap,2013-11-07,1520,04.11.–06.11.,keineangabe,Grüne,0.1
 dimap,2013-10-25,1028,21.10.–23.10.,keineangabe,Grüne,0.09
 dimap,2013-10-10,1503,07.10.–09.10.,keineangabe,Grüne,0.08
+insa,2017-08-15,2025,11.08.–14.08.,online,Grüne,0.07
 insa,2017-08-07,2046,04.08.–07.08.,online,Grüne,0.065
 insa,2017-08-01,2046,28.07.–31.07.,online,Grüne,0.07
 insa,2017-07-25,2009,21.07.–24.07.,online,Grüne,0.065
@@ -2874,8 +2883,8 @@ insa,2012-05-01,2097,13.04.–16.04.,online,Grüne,0.15
 insa,2012-04-23,2075,06.04.–09.04.,online,Grüne,0.13
 insa,2012-04-16,2100,30.03.–02.04.,online,Grüne,0.13
 insa,2012-04-11,2085,23.03.–26.03.,online,Grüne,0.14
-insa,2012-04-03,2099,04.08.–07.08.,online,Grüne,0.15
-insa,2009-09-27,2046,21.07.–24.07.,online,Grüne,0.065
+insa,2012-04-03,2099,11.08.–14.08.,online,Grüne,0.15
+insa,2009-09-27,2025,28.07.–31.07.,online,Grüne,0.07
 allensbach,2017-07-18,1403,01.07.–12.07.,keineangabe,FDP,0.09
 allensbach,2017-06-20,1437,01.06.–15.06.,keineangabe,FDP,0.105
 allensbach,2017-05-26,1457,05.05.–19.05.,keineangabe,FDP,0.09
@@ -2909,6 +2918,7 @@ allensbach,2015-02-19,1400,01.02.–12.02.,keineangabe,FDP,0.05
 allensbach,2015-01-28,1455,09.01.–23.01.,keineangabe,FDP,0.04
 allensbach,2014-12-17,1505,01.12.–12.12.,keineangabe,FDP,0.035
 allensbach,2014-04-16,1571,28.03.–10.04.,keineangabe,FDP,0.045
+emnid,2017-08-12,1886,03.08.–09.08.,keineangabe,FDP,0.08
 emnid,2017-08-05,2453,27.07.–02.08.,keineangabe,FDP,0.08
 emnid,2017-07-29,1921,20.07.–26.07.,keineangabe,FDP,0.08
 emnid,2017-07-22,2349,13.07.–19.07.,keineangabe,FDP,0.08
@@ -3105,6 +3115,7 @@ emnid,2013-10-20,2334,10.10.–16.10.,keineangabe,FDP,0.03
 emnid,2013-10-13,1833,04.10.–09.10.,keineangabe,FDP,0.03
 emnid,2013-10-06,1849,26.09.–01.10.,keineangabe,FDP,0.04
 emnid,2013-09-29,1382,24.09.–26.09.,keineangabe,FDP,0.03
+forsa,2017-08-16,2507,07.08.–11.08.,keineangabe,FDP,0.08
 forsa,2017-08-09,2503,31.07.–04.08.,keineangabe,FDP,0.07
 forsa,2017-08-02,2501,24.07.–28.07.,keineangabe,FDP,0.08
 forsa,2017-07-26,2507,17.07.–21.07.,keineangabe,FDP,0.08
@@ -3559,6 +3570,7 @@ dimap,2013-11-22,1006,19.11.–20.11.,keineangabe,FDP,0.03
 dimap,2013-11-07,1520,04.11.–06.11.,keineangabe,FDP,0.03
 dimap,2013-10-25,1028,21.10.–23.10.,keineangabe,FDP,0.04
 dimap,2013-10-10,1503,07.10.–09.10.,keineangabe,FDP,0.03
+insa,2017-08-15,2025,11.08.–14.08.,online,FDP,0.09
 insa,2017-08-07,2046,04.08.–07.08.,online,FDP,0.09
 insa,2017-08-01,2046,28.07.–31.07.,online,FDP,0.09
 insa,2017-07-25,2009,21.07.–24.07.,online,FDP,0.085
@@ -3833,8 +3845,8 @@ insa,2012-05-01,2097,13.04.–16.04.,online,FDP,0.04
 insa,2012-04-23,2075,06.04.–09.04.,online,FDP,0.04
 insa,2012-04-16,2100,30.03.–02.04.,online,FDP,0.04
 insa,2012-04-11,2085,23.03.–26.03.,online,FDP,0.04
-insa,2012-04-03,2099,04.08.–07.08.,online,FDP,0.04
-insa,2009-09-27,2046,21.07.–24.07.,online,FDP,0.09
+insa,2012-04-03,2099,11.08.–14.08.,online,FDP,0.04
+insa,2009-09-27,2025,28.07.–31.07.,online,FDP,0.09
 allensbach,2017-07-18,1403,01.07.–12.07.,keineangabe,Linke,0.09
 allensbach,2017-06-20,1437,01.06.–15.06.,keineangabe,Linke,0.085
 allensbach,2017-05-26,1457,05.05.–19.05.,keineangabe,Linke,0.08
@@ -3868,6 +3880,7 @@ allensbach,2015-02-19,1400,01.02.–12.02.,keineangabe,Linke,0.09
 allensbach,2015-01-28,1455,09.01.–23.01.,keineangabe,Linke,0.085
 allensbach,2014-12-17,1505,01.12.–12.12.,keineangabe,Linke,0.085
 allensbach,2014-04-16,1571,28.03.–10.04.,keineangabe,Linke,0.08
+emnid,2017-08-12,1886,03.08.–09.08.,keineangabe,Linke,0.1
 emnid,2017-08-05,2453,27.07.–02.08.,keineangabe,Linke,0.1
 emnid,2017-07-29,1921,20.07.–26.07.,keineangabe,Linke,0.09
 emnid,2017-07-22,2349,13.07.–19.07.,keineangabe,Linke,0.09
@@ -4064,6 +4077,7 @@ emnid,2013-10-20,2334,10.10.–16.10.,keineangabe,Linke,0.1
 emnid,2013-10-13,1833,04.10.–09.10.,keineangabe,Linke,0.1
 emnid,2013-10-06,1849,26.09.–01.10.,keineangabe,Linke,0.09
 emnid,2013-09-29,1382,24.09.–26.09.,keineangabe,Linke,0.09
+forsa,2017-08-16,2507,07.08.–11.08.,keineangabe,Linke,0.09
 forsa,2017-08-09,2503,31.07.–04.08.,keineangabe,Linke,0.08
 forsa,2017-08-02,2501,24.07.–28.07.,keineangabe,Linke,0.08
 forsa,2017-07-26,2507,17.07.–21.07.,keineangabe,Linke,0.09
@@ -4518,6 +4532,7 @@ dimap,2013-11-22,1006,19.11.–20.11.,keineangabe,Linke,0.09
 dimap,2013-11-07,1520,04.11.–06.11.,keineangabe,Linke,0.09
 dimap,2013-10-25,1028,21.10.–23.10.,keineangabe,Linke,0.09
 dimap,2013-10-10,1503,07.10.–09.10.,keineangabe,Linke,0.09
+insa,2017-08-15,2025,11.08.–14.08.,online,Linke,0.09
 insa,2017-08-07,2046,04.08.–07.08.,online,Linke,0.105
 insa,2017-08-01,2046,28.07.–31.07.,online,Linke,0.1
 insa,2017-07-25,2009,21.07.–24.07.,online,Linke,0.105
@@ -4792,8 +4807,8 @@ insa,2012-05-01,2097,13.04.–16.04.,online,Linke,0.06
 insa,2012-04-23,2075,06.04.–09.04.,online,Linke,0.07
 insa,2012-04-16,2100,30.03.–02.04.,online,Linke,0.07
 insa,2012-04-11,2085,23.03.–26.03.,online,Linke,0.06
-insa,2012-04-03,2099,04.08.–07.08.,online,Linke,0.07
-insa,2009-09-27,2046,21.07.–24.07.,online,Linke,0.105
+insa,2012-04-03,2099,11.08.–14.08.,online,Linke,0.07
+insa,2009-09-27,2025,28.07.–31.07.,online,Linke,0.09
 allensbach,2017-07-18,1403,01.07.–12.07.,keineangabe,AfD,0.07
 allensbach,2017-06-20,1437,01.06.–15.06.,keineangabe,AfD,0.065
 allensbach,2017-05-26,1457,05.05.–19.05.,keineangabe,AfD,0.08
@@ -4827,6 +4842,7 @@ allensbach,2015-02-19,1400,01.02.–12.02.,keineangabe,AfD,0.06
 allensbach,2015-01-28,1455,09.01.–23.01.,keineangabe,AfD,0.06
 allensbach,2014-12-17,1505,01.12.–12.12.,keineangabe,AfD,0.07
 allensbach,2014-04-16,1571,28.03.–10.04.,keineangabe,AfD,0.05
+emnid,2017-08-12,1886,03.08.–09.08.,keineangabe,AfD,0.08
 emnid,2017-08-05,2453,27.07.–02.08.,keineangabe,AfD,0.08
 emnid,2017-07-29,1921,20.07.–26.07.,keineangabe,AfD,0.09
 emnid,2017-07-22,2349,13.07.–19.07.,keineangabe,AfD,0.08
@@ -5023,6 +5039,7 @@ emnid,2013-10-20,2334,10.10.–16.10.,keineangabe,AfD,0.05
 emnid,2013-10-13,1833,04.10.–09.10.,keineangabe,AfD,0.06
 emnid,2013-10-06,1849,26.09.–01.10.,keineangabe,AfD,0.06
 emnid,2013-09-29,1382,24.09.–26.09.,keineangabe,AfD,0.06
+forsa,2017-08-16,2507,07.08.–11.08.,keineangabe,AfD,0.08
 forsa,2017-08-09,2503,31.07.–04.08.,keineangabe,AfD,0.08
 forsa,2017-08-02,2501,24.07.–28.07.,keineangabe,AfD,0.08
 forsa,2017-07-26,2507,17.07.–21.07.,keineangabe,AfD,0.07
@@ -5477,6 +5494,7 @@ dimap,2013-11-22,1006,19.11.–20.11.,keineangabe,AfD,0.04
 dimap,2013-11-07,1520,04.11.–06.11.,keineangabe,AfD,0.04
 dimap,2013-10-25,1028,21.10.–23.10.,keineangabe,AfD,0.05
 dimap,2013-10-10,1503,07.10.–09.10.,keineangabe,AfD,0.045
+insa,2017-08-15,2025,11.08.–14.08.,online,AfD,0.1
 insa,2017-08-07,2046,04.08.–07.08.,online,AfD,0.09
 insa,2017-08-01,2046,28.07.–31.07.,online,AfD,0.095
 insa,2017-07-25,2009,21.07.–24.07.,online,AfD,0.09
@@ -5751,8 +5769,8 @@ insa,2012-05-01,2097,13.04.–16.04.,online,AfD,NA
 insa,2012-04-23,2075,06.04.–09.04.,online,AfD,NA
 insa,2012-04-16,2100,30.03.–02.04.,online,AfD,NA
 insa,2012-04-11,2085,23.03.–26.03.,online,AfD,NA
-insa,2012-04-03,2099,04.08.–07.08.,online,AfD,NA
-insa,2009-09-27,2046,21.07.–24.07.,online,AfD,0.09
+insa,2012-04-03,2099,11.08.–14.08.,online,AfD,NA
+insa,2009-09-27,2025,28.07.–31.07.,online,AfD,0.1
 allensbach,2017-07-18,1403,01.07.–12.07.,keineangabe,sonstige,0.035
 allensbach,2017-06-20,1437,01.06.–15.06.,keineangabe,sonstige,0.035
 allensbach,2017-05-26,1457,05.05.–19.05.,keineangabe,sonstige,0.04
@@ -5786,6 +5804,7 @@ allensbach,2015-02-19,1400,01.02.–12.02.,keineangabe,sonstige,0.04
 allensbach,2015-01-28,1455,09.01.–23.01.,keineangabe,sonstige,0.045
 allensbach,2014-12-17,1505,01.12.–12.12.,keineangabe,sonstige,0.05
 allensbach,2014-04-16,1571,28.03.–10.04.,keineangabe,sonstige,0.05
+emnid,2017-08-12,1886,03.08.–09.08.,keineangabe,sonstige,0.05
 emnid,2017-08-05,2453,27.07.–02.08.,keineangabe,sonstige,0.05
 emnid,2017-07-29,1921,20.07.–26.07.,keineangabe,sonstige,0.04
 emnid,2017-07-22,2349,13.07.–19.07.,keineangabe,sonstige,0.04
@@ -5982,6 +6001,7 @@ emnid,2013-10-20,2334,10.10.–16.10.,keineangabe,sonstige,0.06
 emnid,2013-10-13,1833,04.10.–09.10.,keineangabe,sonstige,0.05
 emnid,2013-10-06,1849,26.09.–01.10.,keineangabe,sonstige,0.06
 emnid,2013-09-29,1382,24.09.–26.09.,keineangabe,sonstige,0.06
+forsa,2017-08-16,2507,07.08.–11.08.,keineangabe,sonstige,0.05
 forsa,2017-08-09,2503,31.07.–04.08.,keineangabe,sonstige,0.06
 forsa,2017-08-02,2501,24.07.–28.07.,keineangabe,sonstige,0.06
 forsa,2017-07-26,2507,17.07.–21.07.,keineangabe,sonstige,0.06
@@ -6436,6 +6456,7 @@ dimap,2013-11-22,1006,19.11.–20.11.,keineangabe,sonstige,0.07
 dimap,2013-11-07,1520,04.11.–06.11.,keineangabe,sonstige,0.06
 dimap,2013-10-25,1028,21.10.–23.10.,keineangabe,sonstige,0.06
 dimap,2013-10-10,1503,07.10.–09.10.,keineangabe,sonstige,0.075
+insa,2017-08-15,2025,11.08.–14.08.,online,sonstige,0.03
 insa,2017-08-07,2046,04.08.–07.08.,online,sonstige,0.03
 insa,2017-08-01,2046,28.07.–31.07.,online,sonstige,0.03
 insa,2017-07-25,2009,21.07.–24.07.,online,sonstige,0.03
@@ -6710,8 +6731,8 @@ insa,2012-05-01,2097,13.04.–16.04.,online,sonstige,0.04
 insa,2012-04-23,2075,06.04.–09.04.,online,sonstige,0.04
 insa,2012-04-16,2100,30.03.–02.04.,online,sonstige,0.04
 insa,2012-04-11,2085,23.03.–26.03.,online,sonstige,0.03
-insa,2012-04-03,2099,04.08.–07.08.,online,sonstige,0.03
-insa,2009-09-27,2046,21.07.–24.07.,online,sonstige,0.03
+insa,2012-04-03,2099,11.08.–14.08.,online,sonstige,0.03
+insa,2009-09-27,2025,28.07.–31.07.,online,sonstige,0.03
 allensbach,2017-07-18,1403,01.07.–12.07.,keineangabe,nw_un,NA
 allensbach,2017-06-20,1437,01.06.–15.06.,keineangabe,nw_un,NA
 allensbach,2017-05-26,1457,05.05.–19.05.,keineangabe,nw_un,NA
@@ -6745,6 +6766,7 @@ allensbach,2015-02-19,1400,01.02.–12.02.,keineangabe,nw_un,NA
 allensbach,2015-01-28,1455,09.01.–23.01.,keineangabe,nw_un,NA
 allensbach,2014-12-17,1505,01.12.–12.12.,keineangabe,nw_un,NA
 allensbach,2014-04-16,1571,28.03.–10.04.,keineangabe,nw_un,NA
+emnid,2017-08-12,1886,03.08.–09.08.,keineangabe,nw_un,NA
 emnid,2017-08-05,2453,27.07.–02.08.,keineangabe,nw_un,NA
 emnid,2017-07-29,1921,20.07.–26.07.,keineangabe,nw_un,NA
 emnid,2017-07-22,2349,13.07.–19.07.,keineangabe,nw_un,NA
@@ -6941,6 +6963,7 @@ emnid,2013-10-20,2334,10.10.–16.10.,keineangabe,nw_un,NA
 emnid,2013-10-13,1833,04.10.–09.10.,keineangabe,nw_un,NA
 emnid,2013-10-06,1849,26.09.–01.10.,keineangabe,nw_un,NA
 emnid,2013-09-29,1382,24.09.–26.09.,keineangabe,nw_un,NA
+forsa,2017-08-16,2507,07.08.–11.08.,keineangabe,nw_un,0.24
 forsa,2017-08-09,2503,31.07.–04.08.,keineangabe,nw_un,0.24
 forsa,2017-08-02,2501,24.07.–28.07.,keineangabe,nw_un,0.23
 forsa,2017-07-26,2507,17.07.–21.07.,keineangabe,nw_un,0.23
@@ -7395,6 +7418,7 @@ dimap,2013-11-22,1006,19.11.–20.11.,keineangabe,nw_un,NA
 dimap,2013-11-07,1520,04.11.–06.11.,keineangabe,nw_un,NA
 dimap,2013-10-25,1028,21.10.–23.10.,keineangabe,nw_un,NA
 dimap,2013-10-10,1503,07.10.–09.10.,keineangabe,nw_un,NA
+insa,2017-08-15,2025,11.08.–14.08.,online,nw_un,NA
 insa,2017-08-07,2046,04.08.–07.08.,online,nw_un,NA
 insa,2017-08-01,2046,28.07.–31.07.,online,nw_un,NA
 insa,2017-07-25,2009,21.07.–24.07.,online,nw_un,NA
@@ -7669,8 +7693,8 @@ insa,2012-05-01,2097,13.04.–16.04.,online,nw_un,NA
 insa,2012-04-23,2075,06.04.–09.04.,online,nw_un,NA
 insa,2012-04-16,2100,30.03.–02.04.,online,nw_un,NA
 insa,2012-04-11,2085,23.03.–26.03.,online,nw_un,NA
-insa,2012-04-03,2099,04.08.–07.08.,online,nw_un,NA
-insa,2009-09-27,2046,21.07.–24.07.,online,nw_un,NA
+insa,2012-04-03,2099,11.08.–14.08.,online,nw_un,NA
+insa,2009-09-27,2025,28.07.–31.07.,online,nw_un,NA
 allensbach,2017-07-18,1403,01.07.–12.07.,keineangabe,fw,NA
 allensbach,2017-06-20,1437,01.06.–15.06.,keineangabe,fw,NA
 allensbach,2017-05-26,1457,05.05.–19.05.,keineangabe,fw,NA
@@ -7704,6 +7728,7 @@ allensbach,2015-02-19,1400,01.02.–12.02.,keineangabe,fw,NA
 allensbach,2015-01-28,1455,09.01.–23.01.,keineangabe,fw,NA
 allensbach,2014-12-17,1505,01.12.–12.12.,keineangabe,fw,NA
 allensbach,2014-04-16,1571,28.03.–10.04.,keineangabe,fw,NA
+emnid,2017-08-12,1886,03.08.–09.08.,keineangabe,fw,NA
 emnid,2017-08-05,2453,27.07.–02.08.,keineangabe,fw,NA
 emnid,2017-07-29,1921,20.07.–26.07.,keineangabe,fw,NA
 emnid,2017-07-22,2349,13.07.–19.07.,keineangabe,fw,NA
@@ -7900,6 +7925,7 @@ emnid,2013-10-20,2334,10.10.–16.10.,keineangabe,fw,NA
 emnid,2013-10-13,1833,04.10.–09.10.,keineangabe,fw,NA
 emnid,2013-10-06,1849,26.09.–01.10.,keineangabe,fw,NA
 emnid,2013-09-29,1382,24.09.–26.09.,keineangabe,fw,NA
+forsa,2017-08-16,2507,07.08.–11.08.,keineangabe,fw,NA
 forsa,2017-08-09,2503,31.07.–04.08.,keineangabe,fw,NA
 forsa,2017-08-02,2501,24.07.–28.07.,keineangabe,fw,NA
 forsa,2017-07-26,2507,17.07.–21.07.,keineangabe,fw,NA
@@ -8354,6 +8380,7 @@ dimap,2013-11-22,1006,19.11.–20.11.,keineangabe,fw,NA
 dimap,2013-11-07,1520,04.11.–06.11.,keineangabe,fw,NA
 dimap,2013-10-25,1028,21.10.–23.10.,keineangabe,fw,NA
 dimap,2013-10-10,1503,07.10.–09.10.,keineangabe,fw,NA
+insa,2017-08-15,2025,11.08.–14.08.,online,fw,NA
 insa,2017-08-07,2046,04.08.–07.08.,online,fw,NA
 insa,2017-08-01,2046,28.07.–31.07.,online,fw,NA
 insa,2017-07-25,2009,21.07.–24.07.,online,fw,NA
@@ -8628,5 +8655,5 @@ insa,2012-05-01,2097,13.04.–16.04.,online,fw,NA
 insa,2012-04-23,2075,06.04.–09.04.,online,fw,NA
 insa,2012-04-16,2100,30.03.–02.04.,online,fw,NA
 insa,2012-04-11,2085,23.03.–26.03.,online,fw,NA
-insa,2012-04-03,2099,04.08.–07.08.,online,fw,NA
-insa,2009-09-27,2046,21.07.–24.07.,online,fw,NA
+insa,2012-04-03,2099,11.08.–14.08.,online,fw,NA
+insa,2009-09-27,2025,28.07.–31.07.,online,fw,NA
