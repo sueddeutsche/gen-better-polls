@@ -10,8 +10,9 @@ df_rolling_average_and_error_party <- unique(df_rolling_average_and_error$partei
 
 latest_values <- arrange(df_rolling_average_and_error, desc(datum)) %>% filter(datum == datum[1])
 hidden_chars <- c("\U200C","\u200D","\u200E","\u200F","\U200C","\u200D")
-latest_values <- arrange(latest_values, desc(rolling_average))
+latest_values <- unique(arrange(latest_values, desc(rolling_average)))
 latest_values <- cbind(latest_values, hidden_chars)
+# print(latest_values)
 startDatum <- "2015-06-01"
 df_rolling_average_and_error <- filter(df_rolling_average_and_error, datum > startDatum)
 
