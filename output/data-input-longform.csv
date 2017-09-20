@@ -1,4 +1,5 @@
 institut,datum,befragte,zeitraum,typ,partei,anteil
+allensbach,2017-09-19,1083,06.09.–14.09.,keineangabe,CDU/CSU,0.365
 allensbach,2017-09-06,1043,22.08.–31.08.,keineangabe,CDU/CSU,0.385
 allensbach,2017-08-22,1421,04.08.–17.08.,keineangabe,CDU/CSU,0.395
 allensbach,2017-07-18,1403,01.07.–12.07.,keineangabe,CDU/CSU,0.395
@@ -989,6 +990,7 @@ insa,2012-04-16,2100,30.03.–02.04.,online,CDU/CSU,0.36
 insa,2012-04-11,2085,23.03.–26.03.,online,CDU/CSU,0.35
 insa,2012-04-03,2099,15.09.–18.09.,online,CDU/CSU,0.36
 insa,2009-09-27,2042,01.09.–04.09.,online,CDU/CSU,0.338
+allensbach,2017-09-19,1083,06.09.–14.09.,keineangabe,SPD,0.22
 allensbach,2017-09-06,1043,22.08.–31.08.,keineangabe,SPD,0.24
 allensbach,2017-08-22,1421,04.08.–17.08.,keineangabe,SPD,0.24
 allensbach,2017-07-18,1403,01.07.–12.07.,keineangabe,SPD,0.25
@@ -1979,6 +1981,7 @@ insa,2012-04-16,2100,30.03.–02.04.,online,SPD,0.27
 insa,2012-04-11,2085,23.03.–26.03.,online,SPD,0.28
 insa,2012-04-03,2099,15.09.–18.09.,online,SPD,0.29
 insa,2009-09-27,2042,01.09.–04.09.,online,SPD,0.23
+allensbach,2017-09-19,1083,06.09.–14.09.,keineangabe,Grüne,0.08
 allensbach,2017-09-06,1043,22.08.–31.08.,keineangabe,Grüne,0.075
 allensbach,2017-08-22,1421,04.08.–17.08.,keineangabe,Grüne,0.075
 allensbach,2017-07-18,1403,01.07.–12.07.,keineangabe,Grüne,0.07
@@ -2969,6 +2972,7 @@ insa,2012-04-16,2100,30.03.–02.04.,online,Grüne,0.13
 insa,2012-04-11,2085,23.03.–26.03.,online,Grüne,0.14
 insa,2012-04-03,2099,15.09.–18.09.,online,Grüne,0.15
 insa,2009-09-27,2042,01.09.–04.09.,online,Grüne,0.07
+allensbach,2017-09-19,1083,06.09.–14.09.,keineangabe,FDP,0.11
 allensbach,2017-09-06,1043,22.08.–31.08.,keineangabe,FDP,0.1
 allensbach,2017-08-22,1421,04.08.–17.08.,keineangabe,FDP,0.1
 allensbach,2017-07-18,1403,01.07.–12.07.,keineangabe,FDP,0.09
@@ -3959,6 +3963,7 @@ insa,2012-04-16,2100,30.03.–02.04.,online,FDP,0.04
 insa,2012-04-11,2085,23.03.–26.03.,online,FDP,0.04
 insa,2012-04-03,2099,15.09.–18.09.,online,FDP,0.04
 insa,2009-09-27,2042,01.09.–04.09.,online,FDP,0.09
+allensbach,2017-09-19,1083,06.09.–14.09.,keineangabe,Linke,0.09
 allensbach,2017-09-06,1043,22.08.–31.08.,keineangabe,Linke,0.08
 allensbach,2017-08-22,1421,04.08.–17.08.,keineangabe,Linke,0.08
 allensbach,2017-07-18,1403,01.07.–12.07.,keineangabe,Linke,0.09
@@ -4949,6 +4954,7 @@ insa,2012-04-16,2100,30.03.–02.04.,online,Linke,0.07
 insa,2012-04-11,2085,23.03.–26.03.,online,Linke,0.06
 insa,2012-04-03,2099,15.09.–18.09.,online,Linke,0.07
 insa,2009-09-27,2042,01.09.–04.09.,online,Linke,0.11
+allensbach,2017-09-19,1083,06.09.–14.09.,keineangabe,AfD,0.1
 allensbach,2017-09-06,1043,22.08.–31.08.,keineangabe,AfD,0.08
 allensbach,2017-08-22,1421,04.08.–17.08.,keineangabe,AfD,0.07
 allensbach,2017-07-18,1403,01.07.–12.07.,keineangabe,AfD,0.07
@@ -5939,6 +5945,7 @@ insa,2012-04-16,2100,30.03.–02.04.,online,AfD,NA
 insa,2012-04-11,2085,23.03.–26.03.,online,AfD,NA
 insa,2012-04-03,2099,15.09.–18.09.,online,AfD,NA
 insa,2009-09-27,2042,01.09.–04.09.,online,AfD,0.11
+allensbach,2017-09-19,1083,06.09.–14.09.,keineangabe,sonstige,0.035
 allensbach,2017-09-06,1043,22.08.–31.08.,keineangabe,sonstige,0.04
 allensbach,2017-08-22,1421,04.08.–17.08.,keineangabe,sonstige,0.04
 allensbach,2017-07-18,1403,01.07.–12.07.,keineangabe,sonstige,0.035
@@ -6929,6 +6936,7 @@ insa,2012-04-16,2100,30.03.–02.04.,online,sonstige,0.04
 insa,2012-04-11,2085,23.03.–26.03.,online,sonstige,0.03
 insa,2012-04-03,2099,15.09.–18.09.,online,sonstige,0.03
 insa,2009-09-27,2042,01.09.–04.09.,online,sonstige,0.04
+allensbach,2017-09-19,1083,06.09.–14.09.,keineangabe,nw_un,NA
 allensbach,2017-09-06,1043,22.08.–31.08.,keineangabe,nw_un,NA
 allensbach,2017-08-22,1421,04.08.–17.08.,keineangabe,nw_un,NA
 allensbach,2017-07-18,1403,01.07.–12.07.,keineangabe,nw_un,NA
@@ -7919,6 +7927,7 @@ insa,2012-04-16,2100,30.03.–02.04.,online,nw_un,NA
 insa,2012-04-11,2085,23.03.–26.03.,online,nw_un,NA
 insa,2012-04-03,2099,15.09.–18.09.,online,nw_un,NA
 insa,2009-09-27,2042,01.09.–04.09.,online,nw_un,NA
+allensbach,2017-09-19,1083,06.09.–14.09.,keineangabe,fw,NA
 allensbach,2017-09-06,1043,22.08.–31.08.,keineangabe,fw,NA
 allensbach,2017-08-22,1421,04.08.–17.08.,keineangabe,fw,NA
 allensbach,2017-07-18,1403,01.07.–12.07.,keineangabe,fw,NA
