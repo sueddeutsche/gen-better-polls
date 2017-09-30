@@ -1,4 +1,10 @@
-df_rolling_average_and_error <- read.csv("data/data-rolling-average-and-error.csv", stringsAsFactors = FALSE, sep=",", encoding ="utf-8")
+df_rolling_average_and_error <- read.csv("data/data-rolling-dirichlet-pooling.csv", stringsAsFactors = FALSE, sep=",", encoding ="utf-8")
+
+##If font present - unless there is an easy way to get the font this should go into config.R
+##SZoSansCond_Light <- "SZoSansCond-Light"
+SZoSansCond_Light <- ""
+
+cat("Making the graphics for the latest poll date: ",as.character(max(df_rolling_average_and_error$datum)),"\n")
 
 sunday_data <- df_rolling_average_and_error %>% arrange(desc(datum)) %>% filter(datum == datum[1]) %>% select(datum, partei, rolling_average, ci_higher, ci_lower)
 sunday_data <- unique(sunday_data)
@@ -11,7 +17,7 @@ sunday_data$ci_lower <- round(sunday_data$ci_lower, digits = 2)
 sunday_data <- sunday_data[order(sunday_data$rolling_average),]
 sunday_data <- mutate(sunday_data, y = as.numeric(order(sunday_data$rolling_average, decreasing = TRUE )))
 
-# sunday_data
+# sunday_data§
 
 do_basic_table_chart <- function(){
   sundaychart <-  ggplot(data = sunday_data, aes(x = rolling_average, y = -y, xmin = (ci_lower), xmax = (ci_higher) , ymax = -y + 0.3, ymin = -y -0.3, color = partei)) +
@@ -24,15 +30,15 @@ do_basic_table_chart <- function(){
     scale_x_continuous(labels = scales::percent, position = "top")
 
   article_chart <- sundaychart +
-    geom_label(aes(x = ci_higher,label = paste0(round(sunday_data$ci_lower*100, digits = 0), "-", round(sunday_data$ci_higher*100, digits = 0), "%")), fill = NA, label.size = 0, hjust = - 0.2, family="SZoSansCond-Light", size = 6.35)
+    geom_label(aes(x = ci_higher,label = paste0(round(sunday_data$ci_lower*100, digits = 0), "-", round(sunday_data$ci_higher*100, digits = 0), "%")), fill = NA, label.size = 0, hjust = - 0.2, family=SZoSansCond_Light, size = 6.35)
   mobile_chart <- sundaychart +
-    geom_label(aes(x = ci_higher,label = paste0(round(sunday_data$ci_lower*100, digits = 0), "-", round(sunday_data$ci_higher*100, digits = 0), "%")), fill = NA, label.size = 0, hjust = - 0.1, family="SZoSansCond-Light", size = 6.35)
+    geom_label(aes(x = ci_higher,label = paste0(round(sunday_data$ci_lower*100, digits = 0), "-", round(sunday_data$ci_higher*100, digits = 0), "%")), fill = NA, label.size = 0, hjust = - 0.1, family=SZoSansCond_Light, size = 6.35)
   teaser_chart <- sundaychart + sztheme_teaser + theme(panel.grid.major.y = element_blank())
 
   # plot(article_chart)
-  ggsave(file="data/assets/sunday-polls-mobile.png", plot = mobile_chart, units = "in", dpi = 144, width = 4.45, height = 3.0)
-  ggsave(file="data/assets/sunday-polls-article.png", plot= article_chart, units = "in", dpi = 144, width = 8.89, height = 3.0)
-  ggsave(file="data/assets/sunday-polls-teaser.png", plot=teaser_chart, dpi = 72, units = "in", width = 8.89, height = 5.01)
+  ggsave(file=file.path("data","assets","sunday-polls-mobile-dirichlet.png"), plot = mobile_chart, units = "in", dpi = 144, width = 4.45, height = 3.0)
+  ggsave(file=file.path("data","assets","sunday-polls-article-dirichlet.png"), plot= article_chart, units = "in", dpi = 144, width = 8.89, height = 3.0)
+  ggsave(file=file.path("data","assets","sunday-polls-teaser-dirichlet.png"), plot=teaser_chart, dpi = 72, units = "in", width = 8.89, height = 5.01)
 }
 
 do_basic_table_chart()
